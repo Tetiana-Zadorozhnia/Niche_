@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NICHE</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LANGUAGE_______________________________________________________________________________ -->
+      <!-- Зміст буде змінюватись залежно від обраної мови -->
+      <div class="language-switcher">
+        <a href="#" onclick="changeLanguage('en')" class="language-link" id="language-link_en">English</a>
+        <a href="#" onclick="changeLanguage('uk')" class="language-link"  id="language-link_uk">Українська</a>
+        <a href="#" onclick="changeLanguage('es')" class="language-link" id="language-link_es">Español</a>
+        <a href="#" onclick="changeLanguage('zh')" class="language-link" id="language-link_zh">中文</a>
+      </div>
+
+      <header>
+        <!-- LOGO_______________________________________________________________________ -->
+        <div class="logo">
+          <img src="images/niche.png" alt="" />
+        </div>
+
+        <!-- ВЕРХНЯ ПАНЕЛЬ НАВІГАЦІЯ_______________________________________________________________________ -->
+		  <input type="checkbox" id="burger-checkbox">
+		  <label for="burger-checkbox" class="burger-icon">
+			 <span></span>
+			 <span></span>
+			 <span></span>
+		  </label>
+		  <nav class="main-menu">
+          <ul>
+            <li>
+              <a
+                id="home"
+                class="active" 
+                href="#"
+                data-translate="HOME"
+                >HOME</a
+              >
+            </li>
+				<li>
+					<a
+					  id="about-us"
+					  href="#about_us"
+					  data-translate="ABOUT US"
+					  >ABOUT US</a
+					>
+				 </li>
+
+            <li class="down">
+              <a
+                id="solutions"
+                href="#solution"
+                data-translate="SOLUTIONS"
+                >SOLUTIONS</a
+              >
+              <ul class="down-menu">
+                <li>
+                  <a id="aud" href="#" data-translate="Audit & Consulting"
+                    >Audit & Consulting</a
+                  >
+                </li>
+                <li>
+                  <a id="proc" href="#"
+						data-translate="Process Management">Process Management</a>
+                </li>
+                <li>
+                  <a id="sour" href="#" data-translate="Sourcing">Sourcing</a>
+                </li>
+                <li>
+                  <a id="qual" href="#" data-translate="Quality Assurance"
+                    >Quality Assurance</a
+                  >
+                </li>
+                <li>
+                  <a id="log" href="#" data-translate="Logistics">Logistics</a>
+                </li>
+              </ul>
+            </li>
+
+            <li >
+              <a
+                id="contacts"
+                href="#contacts"
+                data-translate="CONTACTS"
+                >CONTACTS</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!--ВКЛАДКА HOME____________________________________________________________________________ -->
+        <div id="home-content">
+          <div class="all">
+            <input checked type="radio" name="respond" id="desktop" />
+            <article id="slider">
+              <input checked type="radio" name="slider" id="switch1" />
+              <input type="radio" name="slider" id="switch2" />
+
+              <div id="slides">
+                <div id="overflow">
+                  <div class="image">
+                    <article><img src="images/slide1.png" alt=""/></article>
+                    <article><img src="images/slide2.png" alt=""/></article>
+                  </div>
+                </div>
+              </div>
+              <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+              </div>
+              <div id="active_sl">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+              </div>
+              <div class="slider-arrow left">
+                <img src="images/green.png" alt="" />
+              </div>
+
+              <div class="slider-arrow right">
+                <img src="images/orange.png" alt="" />
+              </div>
+            </article>
+          </div>
+
+          <div class="text-home">
+            <p
+              data-translate="Niche Supply Control Co. Ltd provides professional cost effective solutions for procurement and supply management in China for retail chain clients. We deal with almost all non-food consumer goods represented in most large supermarkets as well as a few selected food products."
+            >
+              Niche Supply Control Co. Ltd provides professional cost effective
+              solutions for procurement and supply management in China for
+              retail chain clients. We deal with almost all non-food consumer
+              goods represented in most large supermarkets as well as a few
+              selected food products.
+            </p>
+            <p
+              id="text-home-gray"
+              data-translate="Our level of service and support is unprecedented, as we are present and capable of providing guidance during all stages of your procurement and supply chain. We begin with planning and analysis, continue with order processing and control, and complete your procurement with expert consulting in the area of logistics and final delivery…"
+            >
+              Our level of service and support is unprecedented, as we are
+              present and capable of providing guidance during all stages of
+              your procurement and supply chain. We begin with planning and
+              analysis, continue with order processing and control, and complete
+              your procurement with expert consulting in the area of logistics
+              and final delivery…
+              <a id="read-more" href="#about-content" data-translate="read more"
+                >[read more]</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!--ВКЛАДКА ABOUT US_____________________________________________________________________ -->
+        <div id="about-content">
+          <h1 class="title-about" data-translate="About Us">About Us</h1>
+          <h2 class="title-paragraph" data-translate="Introduction">
+            Introduction
+          </h2>
+          <p
+            data-translate="Niche Supply Control Co. Ltd provides professional cost effective solutions for procurement and supply management in China for retail chain clients. We deal with almost all non-food consumer goods represented in most large supermarkets as well as a few selected food products."
+          >
+            Niche Supply Control Co. Ltd provides professional cost effective
+            solutions for procurement and supply management in China for retail
+            chain clients. We deal with almost all non-food consumer goods
+            represented in most large supermarkets as well as a few selected
+            food products.
+          </p>
+          <p
+            data-translate="Our level of service and support is unprecedented, as we are present and capable of providing guidance during all stages of your procurement and supply chain. We begin with planning and analysis, continue with order processing and control, and complete your procurement with expert consulting in the area of logistics and final delivery."
+          >
+            Our level of service and support is unprecedented, as we are present
+            and capable of providing guidance during all stages of your
+            procurement and supply chain. We begin with planning and analysis,
+            continue with order processing and control, and complete your
+            procurement with expert consulting in the area of logistics and
+            final delivery.
+          </p>
+          <p
+            data-translate="We build individualized, highly efficient supply chains for each of our clients that help reduce cost, improve quality, and increase profit, which allows you to concentrate on other priorities. Aside from the obvious benefits of our solutions, our target is to help your development and growth."
+          >
+            We build individualized, highly efficient supply chains for each of
+            our clients that help reduce cost, improve quality, and increase
+            profit, which allows you to concentrate on other priorities. Aside
+            from the obvious benefits of our solutions, our target is to help
+            your development and growth.
+          </p>
+          <p
+            data-translate="At Niche, we pride ourselves on our work ethic and the transparency we have with our customers. No matter the decision, your best interests are always in the front of our mind."
+          >
+            At Niche, we pride ourselves on our work ethic and the transparency
+            we have with our customers. No matter the decision, your best
+            interests are always in the front of our mind.
+          </p>
+
+          <h2 class="title-paragraph" data-translate="Our Team">Our Team</h2>
+          <p
+            data-translate="Our international team of professionals combines experts from procurement, products, and logistics management, to 6 Sigma. We have representatives from all over the world (Asia, Europe, North & South America) which, means we speak and think your language."
+          >
+            Our international team of professionals combines experts from
+            procurement, products, and logistics management, to 6 Sigma. We have
+            representatives from all over the world (Asia, Europe, North & South
+            America) which, means we speak and think your language.
+          </p>
+          <p
+            data-translate="We are very proud of our team and believe that you will appreciate the professionalism and the ease of doing business that we can provide while working with Chinese manufacturers."
+          >
+            We are very proud of our team and believe that you will appreciate
+            the professionalism and the ease of doing business that we can
+            provide while working with Chinese manufacturers.
+          </p>
+
+          <h2 class="title-paragraph" data-translate="Our Locations">
+            Our Locations
+          </h2>
+          <p
+            data-translate="Our International headquarters is located in Beijing, China, where our finance department, customer service, and management team reside. Beyond Beijing, we have an operation in Yiwu and Shantou where stock procurement and goods consolidation occurs."
+          >
+            Our International headquarters is located in Beijing, China, where
+            our finance department, customer service, and management team
+            reside. Beyond Beijing, we have an operation in Yiwu and Shantou
+            where stock procurement and goods consolidation occurs.
+          </p>
+          <p
+            data-translate="Our own in house inspector network can be found in all the main industrial areas of China, including Guangdong, Fujian, Zhejiang, Jiangsu, Shandong, and some other provinces. This coverage allows us to guarantee the high speed, quality services we provide."
+          >
+            Our own in house inspector network can be found in all the main
+            industrial areas of China, including Guangdong, Fujian, Zhejiang,
+            Jiangsu, Shandong, and some other provinces. This coverage allows us
+            to guarantee the high speed, quality services we provide.
+          </p>
+          <p
+            data-translate="Our warehouses are located in the key transport locations, trade points, and main ports which, make us able to solve complicated logistic issues."
+          >
+            Our warehouses are located in the key transport locations, trade
+            points, and main ports which, make us able to solve complicated
+            logistic issues.
+          </p>
+        </div>
+
+        <!--ВКЛАДКА SOLUTION-_______________________________________________________________________-->
+
+        <!-- Основна частина  SOLUTION ------------------------>
+        <div id="solutions-content">
+          <h1 class="title-about" data-translate="Solutions">Solutions</h1>
+
+          <div id="text-solutions">
+            <p
+              data-translate="At Niche Control Supply Co., Ltd we provide you with a one-stop, tailor made, integrated solution, to make your procurement in China successful. A successful procurement is achieved by carefully monitoring and adjusting each step of the supply chain so you receive the goods you want, in the time you need them, at the price you desire, and at the quality you demand"
+            >
+              At Niche Control Supply Co., Ltd we provide you with a one-stop,
+              tailor made, integrated solution, to make your procurement in
+              China successful. A successful procurement is achieved by
+              carefully monitoring and adjusting each step of the supply chain
+              so you receive the goods you want, in the time you need them, at
+              the price you desire, and at the quality you demand
+            </p>
+            <p
+              data-translate="The core elements of our business and the key to fulfilling your needs are in the following areas"
+            >
+              The core elements of our business and the key to fulfilling your
+              needs are in the following areas
+            </p>
+          </div>
+
+          <!-- Нижня частина  SOLUTION посилання ----------------------->
+          <div id="solutions-content_1">
+            <!-- Audit & Consulting -->
+            <div class="sub-content">
+              <a class="sub-tab" id="audit-consulting" href="#audit-consulting"
+                ><img
+                  class="arrow-gray"
+                  src="images/arrow-gray.png"
+                  alt="arrow-gray"
+                  data-translate="Audit & Consulting"
+                />Audit & Consulting</a
+              >
+
+              <div class="dropdown-container">
+                <a href="#" data-translate="Procurement Strategy Development"
+                  >- Procurement Strategy Development</a
+                >
+                <a href="#" data-translate="Supplier Evaluation"
+                  >- Supplier Evaluation</a
+                >
+                <a href="#" data-translate="Legal Support">- Legal Support</a>
+                <a href="#" data-translate="Market Research"
+                  >- Market Research</a
+                >
+                <a href="#" data-translate="Trade Financing"
+                  >- Trade Financing</a
+                >
+              </div>
+              <div id="sub-container-1">
+                <h3 class="sub-title" data-translate="Audit & Consulting">
+                  Audit & Consulting
+                </h3>
+                <p
+                  class="sub-description"
+                  data-translate="Understanding your needs is our first priority. We work with many different retail customers both locally and internationally and we know that each situation is totally unique. Before we recommend anything we do an in-depth analysis of your situation. With a detailed view of your plans, your targets, and your concerns, we can provide you with a tailor made solution"
+                >
+                  Understanding your needs is our first priority. We work with
+                  many different retail customers both locally and
+                  internationally and we know that each situation is totally
+                  unique. Before we recommend anything we do an in-depth
+                  analysis of your situation. With a detailed view of your
+                  plans, your targets, and your concerns, we can provide you
+                  with a tailor made solution
+                </p>
+              </div>
+
+              <!-- Process Management -->
+              <div class="sub-content">
+                <a
+                  class="sub-tab"
+                  id="process-management"
+                  href="#process-management"
+                  ><img
+                    class="arrow-gray"
+                    src="images/arrow-gray.png"
+                    alt="arrow-gray"
+                    data-translate="Process Management"
+                  />Process Management</a
+                >
+
+                <div class="dropdown-container">
+                  <a href="#" data-translate="Workflow Design"
+                    >- Workflow Design</a
+                  >
+                  <a href="#" data-translate="Procurement Planning & Scheduling"
+                    >- Procurement Planning & Scheduling</a
+                  >
+                  <a href="#" data-translate="Negotiation Support"
+                    >- Negotiation Support</a
+                  >
+                  <a href="#" data-translate="Supplier Relationship Management"
+                    >- Supplier Relationship Management</a
+                  >
+                  <a href="#" data-translate="Order Progress Supervision"
+                    >- Order Progress Supervision</a
+                  >
+                  <a href="#" data-translate="Documentation Control"
+                    >- Documentation Control</a
+                  >
+                </div>
+
+                <div id="sub-container-2">
+                  <h3 class="sub-title" data-translate="Process Management">
+                    Process Management
+                  </h3>
+                  <p
+                    class="sub-description"
+                    data-translate="Effective interactions with suppliers is one of the key factors for efficient procurement, and the total result often depends on the organization of work, a mutual understanding, and solid partner relationships"
+                  >
+                    Effective interactions with suppliers is one of the key
+                    factors for efficient procurement, and the total result
+                    often depends on the organization of work, a mutual
+                    understanding, and solid partner relationships
+                  </p>
+                </div>
+
+                <!--  Sourcing-->
+                <div class="sub-content">
+                  <a class="sub-tab" id="sourcing" href="#sourcing"
+                    ><img
+                      class="arrow-gray"
+                      src="images/arrow-gray.png"
+                      alt="arrow-gray"
+                      data-translate="Sourcing"
+                    />Sourcing</a
+                  >
+
+                  <div class="dropdown-container">
+                    <a
+                      href="#"
+                      data-translate="ODM & OEM Manufacturing Management"
+                      >- ODM & OEM Manufacturing Management</a
+                    >
+                    <a href="#" data-translate="Packaging & Labeling Solutions"
+                      >- Packaging & Labeling Solutions</a
+                    >
+                    <a
+                      href="#"
+                      data-translate="Product Adjustment & Improvement"
+                      >- Product Adjustment & Improvement</a
+                    >
+                    <a href="#" data-translate="Leftover Stock Procurement"
+                      >- Leftover Stock Procurement</a
+                    >
+                    <a href="#" data-translate="LCL Procurement"
+                      >- LCL Procurement</a
+                    >
+                  </div>
+
+                  <div id="sub-container-3">
+                    <h3 class="sub-title" data-translate="Sourcing">
+                      Sourcing
+                    </h3>
+                    <p
+                      class="sub-description"
+                      data-translate="With a vast database of trustworthy suppliers and years of product experience, we can offer you a wide range of custom services and solutions that will you provide you with the flexibility and capability to receive the products you need, in the packaging you desire, and all the while, at the price you demand"
+                    >
+                      With a vast database of trustworthy suppliers and years of
+                      product experience, we can offer you a wide range of
+                      custom services and solutions that will you provide you
+                      with the flexibility and capability to receive the
+                      products you need, in the packaging you desire, and all
+                      the while, at the price you demand
+                    </p>
+                  </div>
+
+                  <!-- Quality Assurance -->
+                  <div class="sub-content">
+                    <a
+                      class="sub-tab"
+                      id="quality-assurance"
+                      href="#quality-assurance"
+                      ><img
+                        class="arrow-gray"
+                        src="images/arrow-gray.png"
+                        alt="arrow-gray"
+                        data-translate="Quality Assurance"
+                      />Quality Assurance</a
+                    >
+
+                    <div class="dropdown-container">
+                      <a href="#" data-translate="Quality Criteria Coordination"
+                        >- Quality Criteria Coordination</a
+                      >
+                      <a
+                        href="#"
+                        data-translate="Multi-Stage Quality Inspection"
+                        >- Multi-Stage Quality Inspection</a
+                      >
+                      <a href="#" data-translate="Production Monitoring"
+                        >- Production Monitoring</a
+                      >
+                      <a href="#" data-translate="Defect Sorting"
+                        >- Defect Sorting</a
+                      >
+                      <a
+                        href="#"
+                        data-translate="Laboratory Testing & Certification"
+                        >- Laboratory Testing & Certification</a
+                      >
+                      <a href="#" data-translate="Container Loading Supervision"
+                        >- Container Loading Supervision</a
+                      >
+                    </div>
+
+                    <div id="sub-container-4">
+                      <h3 class="sub-title">Quality Assurance</h3>
+                      <p
+                        class="sub-description"
+                        data-translate="One of the key factors to our success and our ability to make you successful is our keen attention to the quality of your supplied goods. From our experience, when and if quality issues arise, they occur due to three main reasons"
+                      >
+                        One of the key factors to our success and our ability to
+                        make you successful is our keen attention to the quality
+                        of your supplied goods. From our experience, when and if
+                        quality issues arise, they occur due to three main
+                        reasons.
+                      </p>
+                      <p
+                        class="sub-description-2"
+                        data-translate="Firstly, 50% of the time there is a total lack of understanding of the quality requirements between the supplier and client. Secondly, 35% of the time suppliers disregard requirements all together. Lastly, 10% of the time there are intentional cost and quality reductions"
+                      >
+                        Firstly, 50% of the time there is a total lack of
+                        understanding of the quality requirements between the
+                        supplier and client. Secondly, 35% of the time suppliers
+                        disregard requirements all together. Lastly, 10% of the
+                        time there are intentional cost and quality reductions.
+                      </p>
+                      <p
+                        class="sub-description-3"
+                        data-translate="In order to avoid and eliminate the above issues we have adopted and utilize many different processes and tools to guarantee you receive the products you require"
+                      >
+                        In order to avoid and eliminate the above issues we have
+                        adopted and utilize many different processes and tools
+                        to guarantee you receive the products you require.
+                      </p>
+                    </div>
+
+                    <!--Logistics -->
+
+                    <div class="sub-content">
+                      <a class="sub-tab" id="logistics" href="#logistics"
+                        ><img
+                          class="arrow-gray"
+                          src="images/arrow-gray.png"
+                          alt="arrow-gray"
+                          data-translate="Logistics"
+                        />Logistics</a
+                      >
+
+                      <div class="dropdown-container">
+                        <a
+                          href="#"
+                          data-translate="International Transportation"
+                          >- International Transportation</a
+                        >
+                        <a href="#" data-translate="Complex Delivery Planning"
+                          >- Complex Delivery Planning</a
+                        >
+                        <a href="#" data-translate="China Warehouse Management"
+                          >- China Warehouse Management</a
+                        >
+                        <a href="#" data-translate="Door-to-Door Delivery"
+                          >- Door-to-Door Delivery</a
+                        >
+                      </div>
+                      <div id="sub-container-5">
+                        <h3 class="sub-title" data-translate="Logistics">
+                          Logistics
+                        </h3>
+                        <p
+                          class="sub-description"
+                          data-translate="Being such an important element of overall cost and the foundation of supply chain stability, logistics optimization is treated very carefully inside our company. We can offer many solutions and unique fixes for your particular situation which, will result in cost reductions and a more efficient supply chain."
+                        >
+                          Being such an important element of overall cost and
+                          the foundation of supply chain stability, logistics
+                          optimization is treated very carefully inside our
+                          company. We can offer many solutions and unique fixes
+                          for your particular situation which, will result in
+                          cost reductions and a more efficient supply chain.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--ВКЛАДКА CONTACTS-------------------------------------------------------------------------------------------------------->
+        <div id="contacts-content">
+          <h1 class="title-about" data-translate="Contacts">Contacts</h1>
+          <p
+            class="text-contacts-green"
+            data-translate="Thank you for your interest in Niche Supply Control Co., Ltd."
+          >
+            Thank you for your interest in Niche Supply Control Co., Ltd.
+          </p>
+          <p
+            class="text-contacts-green"
+            data-translate="If you have further questions or would like to speak to us about our services, please feel free to use any of the methods of contact below."
+          >
+            If you have further questions or would like to speak to us about our
+            services, please feel free to use any of the methods of contact
+            below.
+          </p>
+          <p
+            class="text-contacts-green"
+            data-translate="We look forward to hearing from you."
+          >
+            We look forward to hearing from you.
+          </p>
+
+          <h2 class="title-paragraph-green" data-translate="Mail">Mail:</h2>
+
+          <p>
+            Niche SC Ltd.
+            <br />
+            Room 707, Time Fortune Building 8 (North Tower),
+            <br />
+            Chaoyang District, Beijing, P.R. China.
+            <br />
+            Postal Code: 100028
+            <br />
+            <br />
+            北京朝阳区三元西桥
+            <br />
+            曙光西里甲6号
+            <br />
+            时间国际8号楼北楼707室
+            <br />
+            邮编：100028
+          </p>
+
+          <h2 class="title-paragraph-green" data-translate="Phone & Fax">
+            Phone & Fax:
+          </h2>
+          <p data-translate="Phone: +86 (10) 6501-0188">
+            Phone: +86 (10) 6501-0188 <br /><br />
+          </p>
+
+          <p data-translate="Fax: +86 (10) 6501-7188">
+            Fax: +86 (10) 6501-7188
+          </p>
+
+          <h2 class="title-paragraph-green" data-translate="Email">Email:</h2>
+          <p data-translate="E-mail for general inquiries: info@nichesc.com">
+            E-mail for general inquiries: info@nichesc.com <br /><br />
+          </p>
+
+          <p
+            data-translate="Direct e-mail for company management: direct@nichesc.com"
+          >
+            Direct e-mail for company management: direct@nichesc.com
+          </p>
+        </div>
+      </main>
+<!--FOOTER-------------------------------------------------------------------------------------------------------->
+      <footer>
+        <div class="footer-left">
+          <img src="images/niche_small.png" alt="Niche logo" />
+        </div>
+
+        <div class="footer-right">
+          <ul>
+            <li>
+              <a
+                id="footer-home"
+                class="footer-active"
+                href="#home-content"
+                data-translate="Home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a id="footer-about-us" href="#about_us" data-translate="About Us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                id="footer-solutions"
+                href="#solution"
+                data-translate="Solutions"
+                >Solutions</a
+              >
+            </li>
+            <li>
+              <a id="footer-contacts" href="#contacts" data-translate="Contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer-bottom">
+            <p>Niche Supply Control Co.,Ltd @ 2009-2013</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1189 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fffafa;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+/* LANGUAGE________________________________________________________________________________*/
+.language-switcher {
+	margin: 10px 0px 3px 850px;
+	font-size: 14px;
+}
+.language-link {
+	padding: 6px;
+	color: #333;
+	text-decoration: none;
+}
+
+.language-link:hover {
+	color: coral;
+}
+
+#language-link_en.active,
+#language-link_uk.active,
+#language-link_es.active,
+#language-link_zh.active {
+	background-color: rgba(188, 228, 188, 0.943);
+	opacity: 0.4;
+	border-radius: 10px;
+	color: #6d0000;
+	font-weight: 600;
+}
+/* HEADER____________________________________________________________________________________*/
+header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* LOGO_______________________________________________________________________________*/
+.logo {
+	margin: 10px 0px 0px 160px;
+}
+
+/* ВЕРХНЯ ПАНЕЛЬ НАВІГАЦІЯ________________________________________________________________*/
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-right: 130px;
+	margin-top: 5px;
+	list-style: none;
+}
+
+nav ul li {
+	margin-right: 5px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	color: rgb(107, 65, 61);
+	text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+	color: #faefef;
+	background-color: rgb(247, 132, 106);
+	border-radius: 5px;
+}
+#burger-checkbox {
+	display: none;
+}
+/* ______________________*/
+.down {
+	position: relative;
+}
+
+.down-menu {
+	display: none;
+	position: absolute;
+	top: 110%;
+	left: -31%;
+	z-index: 1;
+	width: 200px;
+}
+
+.down:hover.down-menu {
+	display: block;
+}
+
+.down-menu li {
+	width: 100%;
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+.down-menu li a {
+	display: block;
+	font-size: 15px;
+	padding: 2px 115px 2px 2px;
+	background-color: rgb(247, 132, 106);
+	white-space: nowrap;
+	margin-bottom: -3px;
+}
+
+.down-menu li a:hover {
+	color: #faefef;
+}
+/* ______________________*/
+
+/*ВКЛАДКА HOME______________________________________________________________________ */
+main {
+	flex: 1;
+	padding: 20px;
+}
+
+#home-content {
+	display: block;
+	margin-left: 110px;
+	width: 870px;
+	min-height: 650px;
+}
+
+/* SLIDER *******************************************************************/
+
+#slider {
+	position: relative;
+	text-align: center;
+	top: 10px;
+	left: 100px;
+}
+
+#slides article {
+	width: 20%;
+	float: left;
+}
+
+#slides .image {
+	width: 470%;
+	line-height: 0;
+}
+
+#overflow {
+	width: 100%;
+	overflow: hidden;
+}
+
+article img {
+	width: 100%;
+}
+
+#desktop:checked ~ #slider {
+	max-width: 960px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(1) {
+	float: left;
+	margin: 0 0 0 -84px;
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+#switch1:checked ~ #controls label:nth-child(1),
+#switch2:checked ~ #controls label:nth-child(2) {
+	float: right;
+	margin: 0 -84px 0 0;
+	height: 68px;
+	width: 68px;
+}
+
+label,
+a {
+	cursor: pointer;
+}
+
+.all input {
+	display: none;
+}
+
+#switch1:checked ~ #slides .image {
+	margin-left: 3%;
+}
+
+#switch2:checked ~ #slides .image {
+	margin-left: -90%;
+}
+
+#controls {
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 40px;
+}
+
+#active_sl label {
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active_sl {
+	margin: 23% 0 0;
+	margin-left: -15px;
+}
+
+#active_sl label:hover {
+	background: #777;
+	border-color: #777;
+}
+
+#switch1:checked ~ #active_sl label:nth-child(1),
+#switch2:checked ~ #active_sl label:nth-child(2) {
+	background: rgb(247, 132, 106);
+	border-color: rgb(247, 132, 106);
+}
+
+#slides .image {
+	transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#controls label:hover {
+	opacity: 0.6;
+}
+
+#controls label {
+	transition: opacity 0.2s ease-out;
+}
+
+.slider-arrow {
+	position: absolute;
+	transform: translateY(-50%);
+	width: 65px;
+	height: 80px;
+	border-radius: 30px;
+	color: #fff;
+	display: flex;
+	cursor: pointer;
+}
+
+.slider-arrow.left {
+	left: -60px;
+	top: 85px;
+	box-shadow: 10px 5px 5px #f9f1f1;
+	border-right: 1px solid #faf0f0;
+}
+
+.slider-arrow.right {
+	right: -10px;
+	top: 85px;
+	box-shadow: -10px 5px 5px#f9f1f1;
+	border-left: 1px solid #faf0f0;
+}
+
+.slider-arrow.left img {
+	width: 30px;
+	height: 30px;
+	margin-top: 25px;
+	margin-left: 15px;
+}
+.slider-arrow.right img {
+	width: 50px;
+	height: 45px;
+	margin-top: 17px;
+	margin-left: 10px;
+}
+
+/* TEXT***************************************************************/
+.text-home {
+	margin-top: -30px;
+	margin-left: 130px;
+}
+
+.text-home p {
+	color: rgb(49, 105, 74);
+	width: 710px;
+	text-indent: 20px;
+	font-size: 16px;
+	margin-top: 50px;
+}
+#text-home-gray {
+	margin-top: 20px;
+	color: rgb(105, 105, 105);
+}
+
+#read-more {
+	color: #ff0000;
+	cursor: pointer;
+}
+
+a#read-more:hover {
+	color: black;
+}
+
+/* ВКЛАДКА ABOUT US____________________________________________________________________*/
+#about-content {
+	display: none;
+	margin-left: 110px;
+	width: 870px;
+	min-height: 700px;
+}
+
+.title-about {
+	color: rgb(107, 65, 61, 0.8);
+	font-size: 30px;
+	font-weight: 400;
+	border-bottom: 3px solid rgb(240, 239, 239);
+	padding-bottom: 10px;
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+.title-paragraph {
+	color: rgb(251, 89, 53);
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 35px;
+}
+p {
+	margin-bottom: 10px;
+	margin-left: 35px;
+	font-size: 16px;
+	font-weight: 400;
+	width: 1000px;
+	color: #808080;
+}
+
+/*ВКЛАДКА SOLUTION-_______________________________________________________________________*/
+
+/* ОСНОВНА ЧАСТИНА SOLUTION------------------------- */
+
+#solutions-content {
+	display: none;
+	margin-left: 110px;
+	width: 870px;
+	min-height: 650px;
+}
+
+#text-solutions {
+	margin-top: 30px;
+	width: 930px;
+	margin-bottom: -50px;
+}
+
+#text-solutions p {
+	color: rgb(38, 119, 18);
+	font-size: 16px;
+	width: 990px;
+}
+
+#solutions-content_1 {
+	margin-bottom: 120px;
+}
+/* НИЖНЯ ЧАСТИНА SOLUTION ПОСИЛАННЯ --------------------- */
+.solutions-content_1 {
+	position: relative;
+}
+.sub-content {
+	height: 100%;
+	margin-top: 10px;
+}
+
+.sub-content a {
+	display: flex;
+	align-items: center;
+	margin-left: -10px;
+	margin-top: -55px;
+	font-size: 14.5px;
+	margin-left: -35px;
+}
+
+.sub-content a img {
+	margin-right: -60px;
+}
+
+.sub-tab {
+	padding: 2px 5px 3px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	color: rgb(251, 89, 53);
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: -120px;
+	text-decoration: none;
+}
+.sub-tab:hover {
+	color: #302e2e;
+}
+
+.dropdown-container {
+	display: none;
+	padding-left: 8px;
+	margin-top: 60px;
+	margin-left: 90px;
+}
+
+.dropdown-container a {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #606060;
+	width: 220px;
+}
+
+#sub-container-1,
+#sub-container-2,
+#sub-container-3,
+#sub-container-4,
+#sub-container-5 {
+	display: none;
+}
+.sub-title {
+	position: absolute;
+	top: 39%;
+	left: 35%;
+	font-size: 16px;
+	font-weight: 600;
+	color: rgb(73, 126, 96) ж;
+}
+
+.sub-description {
+	position: absolute;
+	top: 44%;
+	left: 32%;
+	width: 540px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: rgb(99, 98, 98);
+}
+
+.sub-description-2 {
+	position: absolute;
+	top: 59%;
+	left: 32%;
+	width: 540px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: rgb(99, 98, 98);
+}
+
+.sub-description-3 {
+	position: absolute;
+	top: 74%;
+	left: 32%;
+	font-size: 13px;
+	line-height: 1.5;
+	width: 530px;
+	color: rgb(99, 98, 98);
+}
+
+/* ВКЛАДКА CONTACTS____________________________________________________________________*/
+#contacts-content {
+	display: none;
+	margin-left: 110px;
+	width: 870px;
+	min-height: 650px;
+}
+
+.title-paragraph-green {
+	color: rgb(23, 119, 64);
+	font-size: 16px;
+	margin-left: 34px;
+}
+
+.text-contacts-green {
+	font-size: 16px;
+	font-weight: 400;
+	width: 800px;
+	color: rgb(23, 119, 64);
+}
+
+/* FOOTER________________________________________________________________________________ */
+footer {
+	width: 100%;
+	height: 15%;
+	background-color: #ecebeb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-left img {
+	margin-left: 200px;
+}
+
+.footer-right ul {
+	display: flex;
+	justify-content: center;
+	margin-right: -190px;
+	margin-bottom: 10px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.footer-right ul li {
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+#footer-about-us {
+	display: inline;
+}
+
+.footer-right ul li:last-child {
+	margin-right: 0;
+}
+
+.footer-right ul li a {
+	color: #777;
+	text-decoration: none;
+}
+
+.footer-active,
+.footer-right ul li a.footer-active,
+.footer-right ul li a:hover,
+.footer-right ul li a:active {
+	color: #1a1919;
+}
+
+.footer-bottom p {
+	display: flex;
+	justify-content: center;
+	margin-right: -200px;
+	font-size: 13px;
+	color: #777;
+}
+
+/***************************************************від 1024px до 1279px*********************************************************/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	body {
+		height: 100%;
+		width: 100%;
+		max-width: 1024px;
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		flex-grow: 1;
+	}
+
+	.language-switcher {
+		display: flex;
+		margin-left: 950px;
+	}
+	.language-link {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+
+	.logo {
+		margin-left: 100px;
+	}
+	.logo img {
+		width: 350px;
+	}
+
+	nav ul {
+		margin-top: 55px;
+		margin-left: 140px;
+	}
+	nav ul li {
+		margin-left: 40px;
+	}
+
+	nav ul li a {
+		font-size: 30px;
+		font-weight: 500;
+		margin-top: 5px;
+		padding: 2px 10px 2px 2px;
+	}
+	.down-menu {
+		top: -60%;
+		left: -105%;
+		width: 250px;
+	}
+
+	.down-menu li a {
+		font-size: 22px;
+	}
+
+	#slider {
+		top: 55px;
+		left: 210px;
+	}
+	#slides article {
+		width: 20%;
+	}
+
+	#slides .image {
+		width: 435%;
+	}
+
+	#active_sl {
+		margin-top: 250px;
+		margin-left: -150px;
+	}
+
+	.slider-arrow.left {
+		top: 55px;
+		left: -170px;
+	}
+
+	.slider-arrow.right {
+		top: 60px;
+		right: -150px;
+	}
+
+	.text-home {
+		margin-top: 100px;
+		margin-left: 180px;
+	}
+
+	.text-home p {
+		width: 850px;
+		font-size: 22px;
+	}
+
+	#text-solutions p {
+		font-size: 20px;
+		width: 1100px;
+	}
+
+	.title-paragraph {
+		font-size: 20px;
+	}
+	p {
+		font-size: 20px;
+		width: 1100px;
+	}
+
+	.sub-content a {
+		font-size: 20px;
+	}
+
+	.dropdown-container a {
+		font-size: 14px;
+	}
+	.sub-title {
+		top: 43%;
+		left: 43%;
+		font-size: 18px;
+	}
+	.sub-description,
+	.sub-description-2,
+	.sub-description-3 {
+		left: 40%;
+		width: 750px;
+		font-size: 18px;
+	}
+	.sub-description {
+		top: 48%;
+	}
+
+	.sub-description-2 {
+		top: 66%;
+	}
+
+	.sub-description-3 {
+		top: 83%;
+	}
+
+	.title-paragraph-green {
+		font-size: 22px;
+	}
+
+	.text-contacts-green {
+		font-size: 20px;
+		width: 1100px;
+	}
+
+	footer {
+		height: 90px;
+		width: 1400px;
+	}
+
+	div.footer-right ul li a,
+	div.footer-bottom p {
+		font-size: 16px;
+	}
+}
+
+/*****************************************************від 769px до 1023px***********************************/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	body {
+		height: 100%;
+		width: 100%;
+		max-width: 1023px;
+		margin: 0;
+		padding: 0;
+	}
+	.language-switcher {
+		display: flex;
+		margin-left: 950px;
+	}
+	.language-link {
+		font-size: 20px;
+	}
+	.logo img {
+		margin-right: 20px;
+		width: 350px;
+	}
+	nav ul {
+		display: flex;
+		margin-top: 50px;
+	}
+
+	nav ul li {
+		margin-right: 15px;
+	}
+
+	nav ul li a {
+		font-size: 36px;
+	}
+	.down-menu {
+		top: 1%;
+		left: -20%;
+		width: 250px;
+	}
+
+	.down-menu li a {
+		font-size: 24px;
+	}
+
+	#slider {
+		top: 55px;
+		left: 200px;
+	}
+	#slides article {
+		width: 20%;
+	}
+
+	#slides .image {
+		width: 435%;
+	}
+
+	#active_sl {
+		margin-top: 200px;
+		margin-left: -150px;
+	}
+
+	.slider-arrow.left {
+		top: 55px;
+		left: -90px;
+	}
+
+	.slider-arrow.right {
+		top: 60px;
+		right: -60px;
+	}
+
+	.text-home {
+		margin-top: 100px;
+		margin-left: 180px;
+	}
+
+	.text-home p {
+		width: 850px;
+		font-size: 22px;
+	}
+	.title-about {
+		font-size: 30px;
+	}
+
+	.title-paragraph {
+		font-size: 16px;
+	}
+	p {
+		font-size: 16px;
+		width: 800px;
+	}
+
+	#text-solutions p {
+		font-size: 16px;
+		width: 900px;
+	}
+
+	.title-paragraph {
+		font-size: 20px;
+	}
+	p {
+		font-size: 20px;
+		width: 1100px;
+	}
+
+	.sub-content a {
+		font-size: 22px;
+	}
+
+	.dropdown-container a {
+		font-size: 16px;
+	}
+	.sub-title {
+		top: 18%;
+		left: 47%;
+		font-size: 20px;
+	}
+	.sub-description,
+	.sub-description-2,
+	.sub-description-3 {
+		left: 45%;
+		font-size: 18px;
+		width: 700px;
+	}
+	.sub-description {
+		top: 20%;
+	}
+
+	.sub-description-2 {
+		top: 30%;
+	}
+
+	.sub-description-3 {
+		top: 38%;
+	}
+
+	.title-paragraph-green {
+		font-size: 22px;
+	}
+
+	.text-contacts-green {
+		font-size: 18px;
+		width: 900px;
+	}
+	footer {
+		height: 90px;
+		background-color: #fff9f9;
+	}
+	.footer-right ul li {
+		margin-right: -5px;
+	}
+	.footer-bottom p {
+		margin-left: 10px;
+	}
+}
+
+/************************************************412px до 768px***********************************************/
+
+@media screen and (min-device-width: 412px) and (max-device-width: 768px) {
+	body {
+		width: 100%;
+		height: 100%;
+		max-width: 768px;
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		flex-grow: 1;
+	}
+	.language-switcher {
+		margin-top: 20px;
+		margin-left: 800px;
+	}
+	.language-link {
+		font-size: 22px;
+		margin-left: 25px;
+	}
+	.logo {
+		margin-top: 10px;
+		margin-left: 230px;
+	}
+	.logo img {
+		width: 350px;
+	}
+	nav ul {
+		margin-bottom: 10px;
+	}
+	nav ul li {
+		margin-right: 10px;
+	}
+	nav ul li a {
+		font-size: 36px;
+	}
+
+	.down-menu {
+		top: -5%;
+		left: -20%;
+		z-index: 1;
+		width: 220px;
+	}
+
+	#slides article {
+		width: 25%;
+	}
+
+	#slides .image {
+		width: 400%;
+	}
+	#active_sl {
+		margin-top: 200px;
+		margin-left: 10px;
+	}
+	.slider-arrow.left {
+		top: 75px;
+		left: -50px;
+	}
+	.slider-arrow.right {
+		top: 75px;
+		right: -110px;
+	}
+	.text-home {
+		margin-top: 70px;
+		margin-left: 90px;
+	}
+
+	.text-home p {
+		width: 990px;
+		font-size: 16px;
+	}
+	.title-about,
+	.title-paragraph,
+	p {
+		margin-left: 110px;
+	}
+	.title-about {
+		margin-top: 30px;
+		font-size: 32px;
+	}
+	.title-paragraph {
+		font-size: 20px;
+	}
+	p,
+	#text-solutions p {
+		width: 1100px;
+		margin-top: 30px;
+		font-size: 14px;
+	}
+
+	.dropdown-container a {
+		margin-left: 10px;
+		font-size: 18px;
+	}
+	a.sub-tab {
+		margin-left: 10px;
+		font-size: 30px;
+	}
+
+	.sub-title {
+		top: 14%;
+		left: 62%;
+		font-size: 30px;
+	}
+	.sub-description,
+	.sub-description-2,
+	.sub-description-3 {
+		left: 52%;
+		width: 600px;
+		font-size: 20px;
+	}
+	.sub-description {
+		top: 17%;
+	}
+
+	.sub-description-2 {
+		top: 25%;
+	}
+	.sub-description-3 {
+		top: 32%;
+	}
+	.title-paragraph-green {
+		margin-left: 100px;
+		font-size: 12px;
+	}
+
+	.text-contacts-green {
+		font-size: 22px;
+		width: 980px;
+	}
+
+	footer {
+		height: 90px;
+	}
+
+	.footer-right ul li {
+		margin-right: -5px;
+	}
+	.footer-bottom p {
+		margin-left: 10px;
+	}
+}
+
+/****************************************************від 280px до 411px:***********************************************/
+@media screen and (min-device-width: 280px) and (max-device-width: 411px) {
+	body {
+		max-width: 100%;
+		max-height: 100%;
+		width: 411px;
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		flex-grow: 1;
+	}
+	.language-switcher {
+		margin-top: 50px;
+		margin-left: 800px;
+	}
+
+	.language-link {
+		margin-left: 10px;
+		font-size: 24px;
+	}
+	#language-link_en.active,
+	#language-link_uk.active,
+	#language-link_es.active,
+	#language-link_zh.active {
+		border-radius: 30%;
+		color: #e40f0f;
+	}
+
+	.logo {
+		margin-top: -190px;
+		margin-left: 60px;
+		width: 150px;
+	}
+	.burger-icon {
+		display: block;
+		cursor: pointer;
+		margin-right: 50px;
+	}
+
+	.burger-icon span {
+		display: block;
+		width: 90px;
+		height: 7px;
+		background-color: #2071205b;
+		margin-bottom: 5px;
+		margin-right: 250px;
+	}
+
+	.main-menu ul,
+	.down-menu {
+		display: none;
+	}
+
+	.main-menu {
+		margin-top: 300px;
+		margin-left: -300px;
+	}
+
+	.main-menu li {
+		color: #696363;
+		font-size: 32px;
+		font-weight: 700;
+		padding: 20px;
+	}
+
+	#burger-checkbox:checked ~ .main-menu ul {
+		display: block;
+		position: relative;
+		margin-bottom: -80px;
+		background-color: rgba(188, 228, 188, 0.925);
+		border-radius: 10px;
+		padding: 1px;
+		z-index: 2;
+	}
+	#burger-checkbox {
+		display: none;
+	}
+
+	#burger-checkbox:checked ~ .main-menu ul .down-menu li {
+		display: none;
+		margin: 0;
+		padding: 0;
+		margin-left: 60px;
+	}
+
+	#slider {
+		top: 50px;
+		left: -10px;
+	}
+
+	#slides article {
+		width: 24%;
+	}
+
+	#slides .image {
+		width: 400%;
+		max-height: 300px;
+		object-fit: cover;
+	}
+	.slider-arrow.left {
+		top: 75px;
+		left: -50px;
+	}
+	.slider-arrow.right {
+		top: 75px;
+		right: -140px;
+	}
+	#active_sl {
+		margin-left: 50px;
+	}
+
+	.text-home p {
+		margin-top: -30px;
+		margin-left: -140px;
+		width: 950px;
+		font-size: 12px;
+	}
+	.title-about {
+		margin-top: -20px;
+		font-size: 24px;
+	}
+	.title-paragraph {
+		font-size: 14px;
+	}
+	h1.title-about {
+		font-size: 36px;
+	}
+	p,
+	#text-solutions p {
+		font-size: 12px;
+		width: 1000px;
+	}
+	.dropdown-container a {
+		font-size: 16px;
+	}
+	a.sub-tab {
+		font-size: 26px;
+	}
+
+	.sub-title {
+		top: 17%;
+		left: 60%;
+		font-size: 18px;
+	}
+	.sub-description,
+	.sub-description-2,
+	.sub-description-3 {
+		left: 55%;
+		width: 600px;
+	}
+
+	.sub-description {
+		top: 19%;
+	}
+	.sub-description-2 {
+		top: 27%;
+	}
+
+	.sub-description-3 {
+		top: 35%;
+	}
+
+	footer {
+		height: 90px;
+	}
+
+	.footer-right ul li {
+		margin-right: -5px;
+	}
+	.footer-bottom p {
+		margin-left: 10px;
+	}
+}
