@@ -458,7 +458,7 @@ let translations = {
       "Direct e-mail for company management: direct@nichesc.com",
 
     Home: "Home",
-    "About Us": "About Us",
+    "About Us": "Company",
     Solutions: "Solutions",
     Contacts: "Contacts",
   },
@@ -581,16 +581,16 @@ let translations = {
     "Direct e-mail for company management: direct@nichesc.com":
       "Пряма електронна пошта для керівництва компанії: direct@nichesc.com",
 
-    Home: "Головна",
-    "About Us": "Про нас",
-    Solutions: "Рішення",
-    Contacts: "Контакти",
+    "Home": "Головна",
+    "About Us": "Компанія",
+    "Solutions": "Рішення",
+    "Contacts": "Контакти",
   },
 
   es: {
     // Іспанські переклади
-    HOME: "PAGINA PRINCIPAL",
-    "ABOUT US": "SOBRE NOSOTROS",
+    HOME: "PRINCIPAL",
+    "ABOUT US": "COMPAÑÍA",
     SOLUTIONS: "SOLUCIONES",
     CONTACTS: "CONTACTOS",
 
@@ -706,7 +706,7 @@ let translations = {
       "E-mail directo para gestión de empresa: direct@nichesc.com",
 
     Home: "Hogar",
-    "About Us": "Sobre nosotros",
+    "About Us": "Сompañía",
     Solutions: "Soluciones",
     Contacts: "Contactos",
   },

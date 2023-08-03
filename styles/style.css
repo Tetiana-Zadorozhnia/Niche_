@@ -60,7 +60,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-
 /* LOGO_______________________________________________________________________________*/
 .logo {
 	margin: 10px 0px 0px 160px;
@@ -69,10 +68,9 @@ header {
 /* ВЕРХНЯ ПАНЕЛЬ НАВІГАЦІЯ________________________________________________________________*/
 nav ul {
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-start;
-	margin-right: 130px;
-	margin-top: 5px;
+	flex-wrap: wrap;
+	margin-right: 130px; 
+   margin-top: 5px;
 	list-style: none;
 }
 
@@ -575,10 +573,11 @@ footer {
 
 	.language-switcher {
 		display: flex;
-		margin-left: 950px;
+		min-width: 450px;
+		margin-left: 900px;
 	}
 	.language-link {
-		font-size: 20px;
+		font-size: 22px;
 		margin-left: 10px;
 	}
 
@@ -590,29 +589,48 @@ footer {
 	}
 
 	nav ul {
-		margin-top: 55px;
-		margin-left: 140px;
+display: flex;
+flex-wrap: nowrap;
+min-width: 1000px;
+		margin-top: 25px;
+		margin-left: 70px;
 	}
 	nav ul li {
-		margin-left: 40px;
+		margin-left: 10px;
 	}
 
 	nav ul li a {
-		font-size: 30px;
+		font-size: 38px;
 		font-weight: 500;
 		margin-top: 5px;
 		padding: 2px 10px 2px 2px;
 	}
+	
+	.down {
+		position: relative;
+	}
+	
 	.down-menu {
-		top: -60%;
-		left: -105%;
-		width: 250px;
+		position: absolute;
+		top: 20px;
+		left: -110px;
+		z-index: 1;
 	}
-
+	
+	.down-menu li {
+		width: 200px;
+		margin-top: 5px;
+		margin-left: 2px;
+	}
+	
 	.down-menu li a {
-		font-size: 22px;
+		display: block;
+		font-size: 15px;
+		padding: 2px 15px 2px 2px;
+		margin-bottom: -3px;
 	}
-
+	
+	
 	#slider {
 		top: 55px;
 		left: 210px;
@@ -705,7 +723,7 @@ footer {
 
 	footer {
 		height: 90px;
-		width: 1400px;
+	background-color: #ffffff;
 	}
 
 	div.footer-right ul li a,
@@ -723,39 +741,73 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+
 	.language-switcher {
 		display: flex;
-		margin-left: 950px;
+		flex-wrap: wrap;
+		min-width: 400px;
+		margin-top: 10px;
+		padding-bottom: 20px;
 	}
+
 	.language-link {
+		margin-left: 10px;
 		font-size: 20px;
 	}
+
+	#language-link_en.active,
+	#language-link_uk.active,
+	#language-link_es.active,
+	#language-link_zh.active {
+		border-radius: 30%;
+		color: #e40f0f;
+	}
+	
 	.logo img {
-		margin-right: 20px;
+		margin-top: 50px;
+		margin-right: 90px;
 		width: 350px;
 	}
 	nav ul {
 		display: flex;
-		margin-top: 50px;
+		white-space: nowrap;
+		min-width: 769px;
+		margin-top: 80px;
 	}
 
 	nav ul li {
-		margin-right: 15px;
+		margin-left: 5px;
 	}
 
 	nav ul li a {
-		font-size: 36px;
+		font-size: 30px;
+		font-weight: 700;
+		font-weight: 500;
 	}
+
+	.down {
+		position: relative;
+	}
+	
 	.down-menu {
-		top: 1%;
-		left: -20%;
-		width: 250px;
+		position: absolute;
+		top: -35px;
+		left: -40px;
+		z-index: 1;
 	}
-
+	
+	.down-menu li {
+		width: 200px;
+		margin-top: 5px;
+		margin-left: 2px;
+	}
+	
 	.down-menu li a {
-		font-size: 24px;
+		display: block;
+		font-size: 18px;
+		padding: 5px 15px 5px 5px;
+		margin-bottom: -3px;
 	}
-
 	#slider {
 		top: 55px;
 		left: 200px;
@@ -826,7 +878,7 @@ footer {
 	}
 	.sub-title {
 		top: 18%;
-		left: 47%;
+		left: 48%;
 		font-size: 20px;
 	}
 	.sub-description,
@@ -845,7 +897,7 @@ footer {
 	}
 
 	.sub-description-3 {
-		top: 38%;
+		top: 41%;
 	}
 
 	.title-paragraph-green {
@@ -860,11 +912,14 @@ footer {
 		height: 90px;
 		background-color: #fff9f9;
 	}
+	.footer-right ul{
+		margin-left: 50px;
+	}
 	.footer-right ul li {
 		margin-right: -5px;
 	}
 	.footer-bottom p {
-		margin-left: 10px;
+		margin-left: 150px;
 	}
 }
 
@@ -882,37 +937,84 @@ footer {
 		flex-grow: 1;
 	}
 	.language-switcher {
-		margin-top: 20px;
-		margin-left: 800px;
+		min-width: 600px;
+		margin-top: 40px; 
+		margin-right: 10px; 
 	}
 	.language-link {
-		font-size: 22px;
+		font-size: 26px;
 		margin-left: 25px;
 	}
+	#language-link_en.active,
+	#language-link_uk.active,
+	#language-link_es.active,
+	#language-link_zh.active {
+		border-radius: 30%;
+		color: #e40f0f;
+	}
+
 	.logo {
-		margin-top: 10px;
-		margin-left: 230px;
+		margin-top: -250px;
+		margin-left: 290px;
 	}
 	.logo img {
 		width: 350px;
 	}
-	nav ul {
+	
+	.burger-icon {
+		display: block;
+		cursor: pointer;
+		margin-top: 30px;
+	}
+
+	.burger-icon span {
+		display: block;
+		width: 90px;
+		height: 7px;
+		background-color: #2071205b;
 		margin-bottom: 10px;
-	}
-	nav ul li {
-		margin-right: 10px;
-	}
-	nav ul li a {
-		font-size: 36px;
+		margin-right: 50px;
 	}
 
-	.down-menu {
-		top: -5%;
-		left: -20%;
-		z-index: 1;
-		width: 220px;
+	.main-menu ul {
+		display: none;
 	}
 
+	.main-menu {
+		margin-top: 400px;
+	}
+
+	.main-menu li {
+		color: #696363;
+		font-size: 34px;
+		font-weight: 700;
+		padding: 30px;
+		text-align: center;
+	}
+	.main-menu li a{
+		font-weight: 700;
+	   font-size: 34px;
+}
+	#burger-checkbox:checked ~ .main-menu ul {
+		display: block;
+		position: relative;
+		margin-bottom: -40px;
+		margin-left: -500px;
+		background-color: rgba(188, 228, 188, 0.925);
+		border-radius: 20px;
+		padding: 0px;
+		z-index: 2;
+	}
+	#burger-checkbox {
+		display: none;
+	}
+
+	#burger-checkbox:checked ~ .main-menu ul .down-menu li {
+		display: none;
+		margin: 0;
+		padding: 0;
+		margin-left: 60px;
+	}
 	#slides article {
 		width: 25%;
 	}
@@ -939,7 +1041,7 @@ footer {
 
 	.text-home p {
 		width: 990px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.title-about,
 	.title-paragraph,
@@ -953,11 +1055,12 @@ footer {
 	.title-paragraph {
 		font-size: 20px;
 	}
+ 
 	p,
 	#text-solutions p {
 		width: 1100px;
 		margin-top: 30px;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.dropdown-container a {
@@ -970,7 +1073,7 @@ footer {
 	}
 
 	.sub-title {
-		top: 14%;
+		top: 24%;
 		left: 62%;
 		font-size: 30px;
 	}
@@ -979,21 +1082,24 @@ footer {
 	.sub-description-3 {
 		left: 52%;
 		width: 600px;
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.sub-description {
-		top: 17%;
+		top: 27%;
 	}
 
 	.sub-description-2 {
-		top: 25%;
+		top: 42%;
 	}
 	.sub-description-3 {
-		top: 32%;
+		top: 59%;
 	}
 	.title-paragraph-green {
-		margin-left: 100px;
-		font-size: 12px;
+		margin-left: 120px;
+		font-size: 20px;
+	}
+	 p {
+		font-size: 22px;
 	}
 
 	.text-contacts-green {
@@ -1004,12 +1110,19 @@ footer {
 	footer {
 		height: 90px;
 	}
+.footer-left img{
+	width: 250px;
+	margin-left: 330px;
 
+}
+	.footer-right ul {
+		margin-left: -220px;
+	}
 	.footer-right ul li {
 		margin-right: -5px;
 	}
 	.footer-bottom p {
-		margin-left: 10px;
+		margin-left: 170px;
 	}
 }
 
@@ -1026,8 +1139,11 @@ footer {
 		flex-grow: 1;
 	}
 	.language-switcher {
+		display: flex;
+		flex-wrap: nowrap;
+		min-width: 280px;
 		margin-top: 50px;
-		margin-left: 800px;
+		margin-left: 500px;
 	}
 
 	.language-link {
@@ -1043,14 +1159,15 @@ footer {
 	}
 
 	.logo {
-		margin-top: -190px;
-		margin-left: 60px;
+		margin-top: -300px;
+		margin-left: 10px;
 		width: 150px;
 	}
 	.burger-icon {
 		display: block;
 		cursor: pointer;
-		margin-right: 50px;
+		/* margin-left: 10px; */
+		margin-top: 30px;
 	}
 
 	.burger-icon span {
@@ -1058,50 +1175,58 @@ footer {
 		width: 90px;
 		height: 7px;
 		background-color: #2071205b;
-		margin-bottom: 5px;
-		margin-right: 250px;
+		margin-bottom: 10px;
+		margin-right: 50px;
 	}
 
 	.main-menu ul,
 	.down-menu {
 		display: none;
+
 	}
 
-	.main-menu {
-		margin-top: 300px;
+	.main-menu{
+		margin-bottom: -550px;
 		margin-left: -300px;
-	}
+	
 
+	}
+	.main-menu ul{
+		width: 10px;
+	}
 	.main-menu li {
 		color: #696363;
-		font-size: 32px;
-		font-weight: 700;
-		padding: 20px;
+		padding: 30px;
+		text-align: center;
+	
 	}
-
-	#burger-checkbox:checked ~ .main-menu ul {
+	.main-menu li a{
+		font-size: 32px;
+		font-weight: 800;
+	}
+	 #burger-checkbox:checked ~ .main-menu ul {
 		display: block;
 		position: relative;
-		margin-bottom: -80px;
+		margin-bottom: -40px;  
+		 margin-left: 20px;
 		background-color: rgba(188, 228, 188, 0.925);
 		border-radius: 10px;
-		padding: 1px;
-		z-index: 2;
+		padding: 0px;
+		z-index: 2; 
 	}
 	#burger-checkbox {
 		display: none;
-	}
+	} 
 
 	#burger-checkbox:checked ~ .main-menu ul .down-menu li {
 		display: none;
 		margin: 0;
 		padding: 0;
-		margin-left: 60px;
 	}
 
 	#slider {
 		top: 50px;
-		left: -10px;
+		left: -100px;
 	}
 
 	#slides article {
@@ -1115,11 +1240,11 @@ footer {
 	}
 	.slider-arrow.left {
 		top: 75px;
-		left: -50px;
+		left: -10px;
 	}
 	.slider-arrow.right {
 		top: 75px;
-		right: -140px;
+		right: -40px;
 	}
 	#active_sl {
 		margin-left: 50px;
@@ -1127,24 +1252,24 @@ footer {
 
 	.text-home p {
 		margin-top: -30px;
-		margin-left: -140px;
-		width: 950px;
-		font-size: 12px;
+		margin-left: -240px;
+		width: 800px;
+		font-size: 10px;
 	}
 	.title-about {
 		margin-top: -20px;
-		font-size: 24px;
+		font-size: 22px;
 	}
 	.title-paragraph {
 		font-size: 14px;
 	}
 	h1.title-about {
-		font-size: 36px;
+		font-size: 32px;
 	}
 	p,
 	#text-solutions p {
 		font-size: 12px;
-		width: 1000px;
+		width: 700px;
 	}
 	.dropdown-container a {
 		font-size: 16px;
@@ -1154,36 +1279,59 @@ footer {
 	}
 
 	.sub-title {
-		top: 17%;
-		left: 60%;
+		top: 18%;
+		left: 50%;
 		font-size: 18px;
 	}
 	.sub-description,
 	.sub-description-2,
 	.sub-description-3 {
-		left: 55%;
-		width: 600px;
+		left: 47%;
+		width: 400px;
 	}
 
 	.sub-description {
-		top: 19%;
+		top: 20%;
 	}
 	.sub-description-2 {
-		top: 27%;
+		top: 32%;
 	}
 
 	.sub-description-3 {
-		top: 35%;
+		top: 45%;
+	}
+	.title-paragraph-green {
+		margin-left: 50px;
+		font-size: 10px;
+	}
+
+	.text-contacts-green {
+		font-size: 12px;
+		width: 500px;
 	}
 
 	footer {
 		height: 90px;
+		position: relative;
 	}
+	.footer-left img{
+		margin-left: 100px;
 
+	}
+	.footer-right ul {
+		position:absolute;
+		top:10%;
+		left:80%;
+		/* margin-left: -200px; */
+	}
 	.footer-right ul li {
-		margin-right: -5px;
+		margin-right: 5px;
+	
 	}
 	.footer-bottom p {
-		margin-left: 10px;
+		/* margin-left: 200px; */
+		position:absolute;
+		top:50%;
+		left:72%;
 	}
 }
