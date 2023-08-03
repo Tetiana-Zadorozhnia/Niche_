@@ -1134,7 +1134,14 @@ min-width: 1000px;
 		width: 411px;
 		margin: 0;
 		padding: 0;
+		border: 0;
 	}
+	body, div, p, a, img{
+  border: none !important;
+}
+button{
+  border: none !important;
+}
 	main {
 		flex-grow: 1;
 	}
@@ -1309,29 +1316,25 @@ min-width: 1000px;
 		font-size: 12px;
 		width: 500px;
 	}
-
 	footer {
 		height: 90px;
-		position: relative;
 	}
+	
 	.footer-left img{
 		margin-left: 100px;
 
 	}
 	.footer-right ul {
-		position:absolute;
-		top:10%;
-		left:80%;
-		/* margin-left: -200px; */
+		display: flex;
+		flex-wrap: nowrap;
+		min-width: 300px;
+		margin-right: 30px;
 	}
 	.footer-right ul li {
 		margin-right: 5px;
 	
 	}
 	.footer-bottom p {
-		/* margin-left: 200px; */
-		position:absolute;
-		top:50%;
-		left:72%;
-	}
+		margin-left: -95px;
+	}  
 }
