@@ -1087,35 +1087,35 @@ button{
 	}
 
 	.dropdown-container a {
-		margin-left: -90px;
+		margin-left: -130px;
 		font-size: 18px;
 	}
 	a.sub-tab {
-		margin-left: -90px;
+		margin-left: -130px;
 		font-size: 30px;
 	}
 
 	.sub-title {
-		top: 14%;
-		left: 50%;
+		top: 15%;
+		left: 43%;
 		font-size: 28px;
 	}
 	.sub-description,
 	.sub-description-2,
 	.sub-description-3 {
-		left: 47%;
+		left: 41%;
 		width: 550px;
 		font-size: 22px;
 	}
 	.sub-description {
-		top: 16%;
+		top: 17%;
 	}
 
 	.sub-description-2 {
-		top: 27%;
+		top: 29%;
 	}
 	.sub-description-3 {
-		top: 37%;
+		top: 41%;
 	}
 	.title-paragraph-green {
 		margin-left: 20px;
@@ -1348,6 +1348,7 @@ button{
 	}
 	footer {
 		height: 90px;
+		margin-top: 100px;
 	}
 	
 	.footer-left img{
