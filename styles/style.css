@@ -1142,6 +1142,9 @@ min-width: 1000px;
 button{
   border: none !important;
 }
+* {
+	outline: none !important;
+ }
 	main {
 		flex-grow: 1;
 	}
