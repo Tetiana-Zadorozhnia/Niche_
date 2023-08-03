@@ -932,14 +932,26 @@ min-width: 1000px;
 		max-width: 768px;
 		margin: 0;
 		padding: 0;
+		border: 0;
 	}
+
+	body, div, p, a, img{
+  border: none !important;
+}
+button{
+  border: none !important;
+}
+* {
+	outline: none !important;
+ }
 	main {
 		flex-grow: 1;
 	}
+	
 	.language-switcher {
 		min-width: 600px;
-		margin-top: 40px; 
-		margin-right: 10px; 
+		margin-top: 50px; 
+		margin-left: 450px; 
 	}
 	.language-link {
 		font-size: 26px;
@@ -955,7 +967,7 @@ min-width: 1000px;
 
 	.logo {
 		margin-top: -250px;
-		margin-left: 290px;
+		margin-left: 50px;
 	}
 	.logo img {
 		width: 350px;
@@ -965,6 +977,7 @@ min-width: 1000px;
 		display: block;
 		cursor: pointer;
 		margin-top: 30px;
+		/* margin-left: -400px; */
 	}
 
 	.burger-icon span {
@@ -976,47 +989,57 @@ min-width: 1000px;
 		margin-right: 50px;
 	}
 
-	.main-menu ul {
+	.main-menu ul,
+	.down-menu {
 		display: none;
+
 	}
 
-	.main-menu {
-		margin-top: 400px;
-	}
+	.main-menu{
+		margin-bottom: -500px;
+		margin-left: 150px;
+	
+	
 
+	}
+	.main-menu ul{
+		width: 10px;
+	}
 	.main-menu li {
 		color: #696363;
-		font-size: 34px;
-		font-weight: 700;
 		padding: 30px;
 		text-align: center;
+	
 	}
 	.main-menu li a{
-		font-weight: 700;
-	   font-size: 34px;
-}
-	#burger-checkbox:checked ~ .main-menu ul {
+		font-size: 32px;
+		font-weight: 800;
+	}
+	 #burger-checkbox:checked ~ .main-menu ul {
 		display: block;
 		position: relative;
-		margin-bottom: -40px;
-		margin-left: -500px;
+		margin-bottom: -40px;  
+		 margin-left: -650px;
 		background-color: rgba(188, 228, 188, 0.925);
-		border-radius: 20px;
+		border-radius: 10px;
 		padding: 0px;
-		z-index: 2;
+		z-index: 2; 
 	}
 	#burger-checkbox {
 		display: none;
-	}
+	} 
 
 	#burger-checkbox:checked ~ .main-menu ul .down-menu li {
 		display: none;
 		margin: 0;
 		padding: 0;
-		margin-left: 60px;
+	}
+	#slider {
+		top: 50px;
+		left: -90px;
 	}
 	#slides article {
-		width: 25%;
+		width: 24%;
 	}
 
 	#slides .image {
@@ -1028,102 +1051,107 @@ min-width: 1000px;
 	}
 	.slider-arrow.left {
 		top: 75px;
-		left: -50px;
+		left: -10px;
 	}
 	.slider-arrow.right {
 		top: 75px;
-		right: -110px;
+		right: -30px;
 	}
 	.text-home {
 		margin-top: 70px;
-		margin-left: 90px;
+		margin-left: -10px;
 	}
 
 	.text-home p {
-		width: 990px;
+		width: 700px;
 		font-size: 14px;
 	}
 	.title-about,
 	.title-paragraph,
 	p {
-		margin-left: 110px;
+		margin-left: 10px;
 	}
 	.title-about {
 		margin-top: 30px;
-		font-size: 32px;
+		font-size: 30px;
 	}
 	.title-paragraph {
-		font-size: 20px;
+		font-size: 18px;
 	}
  
 	p,
 	#text-solutions p {
-		width: 1100px;
+		width: 700px;
 		margin-top: 30px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.dropdown-container a {
-		margin-left: 10px;
+		margin-left: -90px;
 		font-size: 18px;
 	}
 	a.sub-tab {
-		margin-left: 10px;
+		margin-left: -90px;
 		font-size: 30px;
 	}
 
 	.sub-title {
-		top: 24%;
-		left: 62%;
-		font-size: 30px;
+		top: 14%;
+		left: 50%;
+		font-size: 28px;
 	}
 	.sub-description,
 	.sub-description-2,
 	.sub-description-3 {
-		left: 52%;
-		width: 600px;
+		left: 47%;
+		width: 550px;
 		font-size: 22px;
 	}
 	.sub-description {
-		top: 27%;
+		top: 16%;
 	}
 
 	.sub-description-2 {
-		top: 42%;
+		top: 27%;
 	}
 	.sub-description-3 {
-		top: 59%;
+		top: 37%;
 	}
 	.title-paragraph-green {
-		margin-left: 120px;
-		font-size: 20px;
+		margin-left: 20px;
+		font-size: 16px;
 	}
 	 p {
 		font-size: 22px;
 	}
 
 	.text-contacts-green {
-		font-size: 22px;
-		width: 980px;
+		font-size: 14px;
+		width: 800px;
 	}
 
 	footer {
 		height: 90px;
+		margin-top: 50px;
 	}
-.footer-left img{
-	width: 250px;
-	margin-left: 330px;
+	
+	.footer-left img{
+		margin-left: 100px;
 
-}
+	}
 	.footer-right ul {
-		margin-left: -220px;
+		display: flex;
+		flex-wrap: nowrap;
+		min-width: 300px;
+		margin-right: 30px;
 	}
 	.footer-right ul li {
-		margin-right: -5px;
+		margin-right: 5px;
+	
 	}
 	.footer-bottom p {
-		margin-left: 170px;
-	}
+		margin-left: -95px;
+	}  
 }
 
 /****************************************************від 280px до 411px:***********************************************/
@@ -1176,7 +1204,6 @@ button{
 	.burger-icon {
 		display: block;
 		cursor: pointer;
-		/* margin-left: 10px; */
 		margin-top: 30px;
 	}
 
