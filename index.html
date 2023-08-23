@@ -11,86 +11,98 @@
       <!-- LANGUAGE_______________________________________________________________________________ -->
       <!--Зміст буде змінюватись залежно від обраної мови-->
       <div class="language-switcher">
-        <a href="#" onclick="changeLanguage('en')" class="language-link" id="language-link_en">English</a>
-        <a href="#" onclick="changeLanguage('uk')" class="language-link"  id="language-link_uk">Українська</a>
-        <a href="#" onclick="changeLanguage('es')" class="language-link" id="language-link_es">Español</a>
-        <a href="#" onclick="changeLanguage('zh')" class="language-link" id="language-link_zh">中文</a>
+        <a
+          href="#"
+          onclick="changeLanguage('en')"
+          class="language-link"
+          id="language-link_en"
+          >English</a
+        >
+        <a
+          href="#"
+          onclick="changeLanguage('uk')"
+          class="language-link"
+          id="language-link_uk"
+          >Українська</a
+        >
+        <a
+          href="#"
+          onclick="changeLanguage('es')"
+          class="language-link"
+          id="language-link_es"
+          >Español</a
+        >
+        <a
+          href="#"
+          onclick="changeLanguage('zh')"
+          class="language-link"
+          id="language-link_zh"
+          >中文</a
+        >
       </div>
 
       <header>
         <!-- LOGO_______________________________________________________________________ -->
         <div class="logo" id="logo">
           <img src="images/niche.png" alt="Logo" />
-        </div>  
+        </div>
 
         <!-- ВЕРХНЯ ПАНЕЛЬ НАВІГАЦІЯ_______________________________________________________________________ -->
-		  <input type="checkbox" id="burger-checkbox">
-		  <label for="burger-checkbox" class="burger-icon">
-			 <span></span>
-			 <span></span>
-			 <span></span>
-		  </label>
-		  <nav class="main-menu">
-			<ul>
-			  <li>
-				 <a
-					id="home"
-					class="active" 
-					href="#"
-					data-translate="HOME"
-					>HOME</a
-				 >
-			  </li>
-			  <li>
-				  <a
-					 id="about-us"
-					 href="#about_us"
-					 data-translate="ABOUT US"
-					 >ABOUT US</a
-				  >
-				</li>
+        <input type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a id="home" class="active" href="#" data-translate="HOME"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a id="about-us" href="#about_us" data-translate="ABOUT US"
+                >ABOUT US</a
+              >
+            </li>
 
-			  <li class="down">
-				 <a
-					id="solutions"
-					href="#solution"
-					data-translate="SOLUTIONS"
-					>SOLUTIONS</a
-				 >
-				 <ul class="down-menu">
-					<li>
-					  <a id="aud" href="#" data-translate="Audit & Consulting"
-						 >Audit & Consulting</a
-					  >
-					</li>
-					<li>
-					  <a id="proc" href="#"
-					  data-translate="Process Management">Process Management</a>
-					</li>
-					<li>
-					  <a id="sour" href="#" data-translate="Sourcing">Sourcing</a>
-					</li>
-					<li>
-					  <a id="qual" href="#" data-translate="Quality Assurance"
-						 >Quality Assurance</a
-					  >
-					</li>
-					<li>
-					  <a id="log" href="#" data-translate="Logistics">Logistics</a>
-					</li>
-				 </ul>
-			  </li>
+            <li class="down">
+              <a id="solutions" href="#solution" data-translate="SOLUTIONS"
+                >SOLUTIONS</a
+              >
+              <ul class="down-menu">
+                <li>
+                  <a id="aud" href="#" data-translate="Audit & Consulting"
+                    >Audit & Consulting</a
+                  >
+                </li>
+                <li>
+                  <a id="proc" href="#" data-translate="Process Management"
+                    >Process Management</a
+                  >
+                </li>
+                <li>
+                  <a id="sour" href="#" data-translate="Sourcing">Sourcing</a>
+                </li>
+                <li>
+                  <a id="qual" href="#" data-translate="Quality Assurance"
+                    >Quality Assurance</a
+                  >
+                </li>
+                <li>
+                  <a id="log" href="#" data-translate="Logistics">Logistics</a>
+                </li>
+              </ul>
+            </li>
 
-			  <li>
-				 <a
-					id="contacts"
-					href="#contacts"
-					data-translate="CONTACTS"
-					>CONTACTS</a
-				 >
-			  </li>
-			</ul>
-		 </nav>
+            <li>
+              <a id="contacts" href="#contacts" data-translate="CONTACTS"
+                >CONTACTS</a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main>
@@ -105,8 +117,8 @@
               <div id="slides">
                 <div id="overflow">
                   <div class="image">
-                    <article><img src="images/slide1.png" alt=""/></article>
-                    <article><img src="images/slide2.png" alt=""/></article>
+                    <article><img src="images/slide1.png" alt="" /></article>
+                    <article><img src="images/slide2.png" alt="" /></article>
                   </div>
                 </div>
               </div>
@@ -128,8 +140,7 @@
             </article>
           </div>
 
-
-			 <div class="text-home">
+          <div class="text-home">
             <p
               data-translate="Niche Supply Control Co. Ltd provides professional cost effective solutions for procurement and supply management in China for retail chain clients. We deal with almost all non-food consumer goods represented in most large supermarkets as well as a few selected food products"
             >
@@ -150,67 +161,97 @@
               your procurement with expert consulting in the area of logistics
               and final delivery…
             </p>
-				<a id="read-more" href="#about-content" data-translate="[read more]"
-				>[read more]</a
-			 >
-			</div>
-			</div>
-       <!--ВКЛАДКА ABOUT US_____________________________________________________________________ -->
-		 <div id="about-content">
-			<h1 class="title-about" data-translate="About Us">About Us</h1>
-			<h2 class="title-paragraph" data-translate="Introduction">
-			  Introduction
-			</h2>
-			<p
-			  data-translate="Niche Supply Control Co. Ltd provides professional cost effective solutions for procurement and supply management in China for retail chain clients. We deal with almost all non-food consumer goods represented in most large supermarkets as well as a few selected food products">Niche Supply Control Co. Ltd provides professional cost effective
-			  solutions for procurement and supply management in China for retail
-			  chain clients. We deal with almost all non-food consumer goods
-			  represented in most large supermarkets as well as a few selected
-			  food products</p>
-			<p
-			  data-translate="Our level of service and support is unprecedented, as we are present and capable of providing guidance during all stages of your procurement and supply chain. We begin with planning and analysis, continue with order processing and control, and complete your procurement with expert consulting in the area of logistics and final delivery">Our level of service and support is unprecedented, as we are present
-			  and capable of providing guidance during all stages of your
-			  procurement and supply chain. We begin with planning and analysis,
-			  continue with order processing and control, and complete your
-			  procurement with expert consulting in the area of logistics and
-			  final delivery</p>
-			<p
-			  data-translate="We build individualized, highly efficient supply chains for each of our clients that help reduce cost, improve quality, and increase profit, which allows you to concentrate on other priorities. Aside from the obvious benefits of our solutions, our target is to help your development and growth">We build individualized, highly efficient supply chains for each of
-			  our clients that help reduce cost, improve quality, and increase
-			  profit, which allows you to concentrate on other priorities. Aside
-			  from the obvious benefits of our solutions, our target is to help
-			  your development and growth</p>
-			<p
-			  data-translate="At Niche, we pride ourselves on our work ethic and the transparency we have with our customers. No matter the decision, your best interests are always in the front of our mind">At Niche, we pride ourselves on our work ethic and the transparency
-			  we have with our customers. No matter the decision, your best
-			  interests are always in the front of our mind</p>
+            <a id="read-more" href="#about-content" data-translate="[read more]"
+              >[read more]</a
+            >
+          </div>
+        </div>
+        <!--ВКЛАДКА ABOUT US_____________________________________________________________________ -->
+        <div id="about-content">
+          <h1 class="title-about" data-translate="About Us">About Us</h1>
+          <h2 class="title-paragraph" data-translate="Introduction">
+            Introduction
+          </h2>
+          <p
+            data-translate="Niche Supply Control Co. Ltd provides professional cost effective solutions for procurement and supply management in China for retail chain clients. We deal with almost all non-food consumer goods represented in most large supermarkets as well as a few selected food products"
+          >
+            Niche Supply Control Co. Ltd provides professional cost effective
+            solutions for procurement and supply management in China for retail
+            chain clients. We deal with almost all non-food consumer goods
+            represented in most large supermarkets as well as a few selected
+            food products
+          </p>
+          <p
+            data-translate="Our level of service and support is unprecedented, as we are present and capable of providing guidance during all stages of your procurement and supply chain. We begin with planning and analysis, continue with order processing and control, and complete your procurement with expert consulting in the area of logistics and final delivery"
+          >
+            Our level of service and support is unprecedented, as we are present
+            and capable of providing guidance during all stages of your
+            procurement and supply chain. We begin with planning and analysis,
+            continue with order processing and control, and complete your
+            procurement with expert consulting in the area of logistics and
+            final delivery
+          </p>
+          <p
+            data-translate="We build individualized, highly efficient supply chains for each of our clients that help reduce cost, improve quality, and increase profit, which allows you to concentrate on other priorities. Aside from the obvious benefits of our solutions, our target is to help your development and growth"
+          >
+            We build individualized, highly efficient supply chains for each of
+            our clients that help reduce cost, improve quality, and increase
+            profit, which allows you to concentrate on other priorities. Aside
+            from the obvious benefits of our solutions, our target is to help
+            your development and growth
+          </p>
+          <p
+            data-translate="At Niche, we pride ourselves on our work ethic and the transparency we have with our customers. No matter the decision, your best interests are always in the front of our mind"
+          >
+            At Niche, we pride ourselves on our work ethic and the transparency
+            we have with our customers. No matter the decision, your best
+            interests are always in the front of our mind
+          </p>
 
-			<h2 class="title-paragraph" data-translate="Our Team">Our Team</h2>
-			<p
-			  data-translate="Our international team of professionals combines experts from procurement, products, and logistics management, to 6 Sigma. We have representatives from all over the world (Asia, Europe, North & South America) which, means we speak and think your language">
-			  Our international team of professionals combines experts from
-			  procurement, products, and logistics management, to 6 Sigma. We have
-			  representatives from all over the world (Asia, Europe, North, South
-			  America) which, means we speak and think your language</p>
-			<p
-			  data-translate="We are very proud of our team and believe that you will appreciate the professionalism and the ease of doing business that we can provide while working with Chinese manufacturers">We are very proud of our team and believe that you will appreciate
-			  the professionalism and the ease of doing business that we can
-			  provide while working with Chinese manufacturers</p>
+          <h2 class="title-paragraph" data-translate="Our Team">Our Team</h2>
+          <p
+            data-translate="Our international team of professionals combines experts from procurement, products, and logistics management, to 6 Sigma. We have representatives from all over the world (Asia, Europe, North & South America) which, means we speak and think your language"
+          >
+            Our international team of professionals combines experts from
+            procurement, products, and logistics management, to 6 Sigma. We have
+            representatives from all over the world (Asia, Europe, North, South
+            America) which, means we speak and think your language
+          </p>
+          <p
+            data-translate="We are very proud of our team and believe that you will appreciate the professionalism and the ease of doing business that we can provide while working with Chinese manufacturers"
+          >
+            We are very proud of our team and believe that you will appreciate
+            the professionalism and the ease of doing business that we can
+            provide while working with Chinese manufacturers
+          </p>
 
-			<h2 class="title-paragraph" data-translate="Our Locations">Our Locations
-			</h2>
-			<p
-			  data-translate="Our International headquarters is located in Beijing, China, where our finance department, customer service, and management team reside. Beyond Beijing, we have an operation in Yiwu and Shantou where stock procurement and goods consolidation occurs">Our International headquarters is located in Beijing, China, where our finance department, customer service, and management team reside. Beyond Beijing, we have an operation in Yiwu and Shantou where stock procurement and goods consolidation occurs</p>
-			<p
-			  data-translate="Our own in house inspector network can be found in all the main industrial areas of China, including Guangdong, Fujian, Zhejiang, Jiangsu, Shandong, and some other provinces. This coverage allows us to guarantee the high speed, quality services we provide">Our own in house inspector network can be found in all the main
-			  industrial areas of China, including Guangdong, Fujian, Zhejiang,
-			  Jiangsu, Shandong, and some other provinces. This coverage allows us
-			  to guarantee the high speed, quality services we provide</p>
-			<p
-			  data-translate="Our warehouses are located in the key transport locations, trade points, and main ports which, make us able to solve complicated logistic issues">Our warehouses are located in the key transport locations, trade
-			  points, and main ports which, make us able to solve complicated
-			  logistic issues</p>
-		 </div>
+          <h2 class="title-paragraph" data-translate="Our Locations">
+            Our Locations
+          </h2>
+          <p
+            data-translate="Our International headquarters is located in Beijing, China, where our finance department, customer service, and management team reside. Beyond Beijing, we have an operation in Yiwu and Shantou where stock procurement and goods consolidation occurs"
+          >
+            Our International headquarters is located in Beijing, China, where
+            our finance department, customer service, and management team
+            reside. Beyond Beijing, we have an operation in Yiwu and Shantou
+            where stock procurement and goods consolidation occurs
+          </p>
+          <p
+            data-translate="Our own in house inspector network can be found in all the main industrial areas of China, including Guangdong, Fujian, Zhejiang, Jiangsu, Shandong, and some other provinces. This coverage allows us to guarantee the high speed, quality services we provide"
+          >
+            Our own in house inspector network can be found in all the main
+            industrial areas of China, including Guangdong, Fujian, Zhejiang,
+            Jiangsu, Shandong, and some other provinces. This coverage allows us
+            to guarantee the high speed, quality services we provide
+          </p>
+          <p
+            data-translate="Our warehouses are located in the key transport locations, trade points, and main ports which, make us able to solve complicated logistic issues"
+          >
+            Our warehouses are located in the key transport locations, trade
+            points, and main ports which, make us able to solve complicated
+            logistic issues
+          </p>
+        </div>
 
         <!--ВКЛАДКА SOLUTION-_______________________________________________________________________-->
 
@@ -220,7 +261,9 @@
 
           <div id="text-solutions">
             <p
-              data-translate="At Niche Control Supply Co., Ltd we provide you with a one-stop, tailor made, integrated solution, to make your procurement in China successful. A successful procurement is achieved by carefully monitoring and adjusting each step of the supply chain so you receive the goods you want, in the time you need them, at the price you desire, and at the quality you demand">At Niche Control Supply Co., Ltd we provide you with a one-stop,
+              data-translate="At Niche Control Supply Co., Ltd we provide you with a one-stop, tailor made, integrated solution, to make your procurement in China successful. A successful procurement is achieved by carefully monitoring and adjusting each step of the supply chain so you receive the goods you want, in the time you need them, at the price you desire, and at the quality you demand"
+            >
+              At Niche Control Supply Co., Ltd we provide you with a one-stop,
               tailor made, integrated solution, to make your procurement in
               China successful. A successful procurement is achieved by
               carefully monitoring and adjusting each step of the supply chain
@@ -228,555 +271,1157 @@
               the price you desire, and at the quality you demand
             </p>
             <p
-              data-translate="The core elements of our business and the key to fulfilling your needs are in the following areas">
+              data-translate="The core elements of our business and the key to fulfilling your needs are in the following areas"
+            >
               The core elements of our business and the key to fulfilling your
               needs are in the following areas
             </p>
           </div>
 
           <!-- Нижня частина  SOLUTION посилання ----------------------->
-    <!-- Audit & Consulting -->
-            <div class="sub-content">
-              <img
-                  class="arrow-gray"
-                  src="images/arrow-gray.png"
-                  alt="arrow-gray"/>
-					 <a class="sub-tab" id="audit-consulting" href="#audit-consulting"    data-translate="Audit & Consulting"
-                >Audit & Consulting</a
-              >
-		
-              <div class="dropdown-container">
-                <a class="sub-sub-tab" id="procurement" href="#procurement" data-translate="Procurement Strategy Development"
-                  >- Procurement Strategy Development</a>
-                <a  class="sub-sub-tab" id="supplier" href="#supplier"  data-translate="Supplier Evaluation">- Supplier Evaluation</a>
-                <a class="sub-sub-tab" id="support" href="#support" data-translate="Legal Support">- Legal Support</a>
-                <a class="sub-sub-tab" id="market" href="#market" data-translate="Market Research">- Market Research</a>
-                <a class="sub-sub-tab" id="trade" href="#trade" data-translate="Trade Financing">- Trade Financing</a>
-              </div>
-				</div>
-				  
+          <!-- Audit & Consulting -->
+          <div class="sub-content">
+            <img
+              class="arrow-gray"
+              src="images/arrow-gray.png"
+              alt="arrow-gray"
+            />
+            <a
+              class="sub-tab"
+              id="audit-consulting"
+              href="#audit-consulting"
+              data-translate="Audit & Consulting"
+              >Audit & Consulting</a
+            >
 
-              <div id="sub-container-1">
-                <h3 class="sub-title" data-translate="Audit & Consulting">
-                  Audit & Consulting
-                </h3>
-                <p
-                  class="sub-description"
-                  data-translate="Understanding your needs is our first priority. We work with many different retail customers both locally and internationally and we know that each situation is totally unique. Before we recommend anything we do an in-depth analysis of your situation. With a detailed view of your plans, your targets, and your concerns, we can provide you with a tailor made solution">Understanding your needs is our first priority. We work with
-                  many different retail customers both locally and
-                  internationally and we know that each situation is totally
-                  unique. Before we recommend anything we do an in-depth
-                  analysis of your situation. With a detailed view of your
-                  plans, your targets, and your concerns, we can provide you
-                  with a tailor made solution
-                </p>
-              </div>
- <!--Для підпосилань Audit & Consulting-------------___________________________-->
-	  <!--1_1-->
-	  <div id="sub-sub-container-1_1" class="sub-sub-container">
-		<h3 class="sub-sub-title" data-translate="Procurement Strategy Development">
-		  Procurement Strategy Development
-		</h3>
-		<p
-		  class="sub-sub-description"
-		  data-translate="Depending on the quantity, quality, delivery schedule, documentation requirements, and other needs you may have, we are able to select and recommend the ideal strategy for your procurement"> Depending on the quantity, quality, delivery schedule, documentation requirements, and other needs you may have, we are able to select and recommend the ideal strategy for your procurement</p>
-	     <p class="sub-sub-description-2"
-        data-translate="By carefully monitoring and utilizing the methods below, we are able to guarantee you a highly efficient and secure supply chain:
+            <div class="dropdown-container">
+              <a
+                class="sub-sub-tab"
+                id="procurement"
+                href="#procurement"
+                data-translate="Procurement Strategy Development"
+                >- Procurement Strategy Development</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="supplier"
+                href="#supplier"
+                data-translate="Supplier Evaluation"
+                >- Supplier Evaluation</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="support"
+                href="#support"
+                data-translate="Legal Support"
+                >- Legal Support</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="market"
+                href="#market"
+                data-translate="Market Research"
+                >- Market Research</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="trade"
+                href="#trade"
+                data-translate="Trade Financing"
+                >- Trade Financing</a
+              >
+            </div>
+          </div>
+
+          <div id="sub-container-1">
+            <h3 class="sub-title" data-translate="Audit & Consulting">
+              Audit & Consulting
+            </h3>
+            <p
+              class="sub-description"
+              data-translate="Understanding your needs is our first priority. We work with many different retail customers both locally and internationally and we know that each situation is totally unique. Before we recommend anything we do an in-depth analysis of your situation. With a detailed view of your plans, your targets, and your concerns, we can provide you with a tailor made solution"
+            >
+              Understanding your needs is our first priority. We work with many
+              different retail customers both locally and internationally and we
+              know that each situation is totally unique. Before we recommend
+              anything we do an in-depth analysis of your situation. With a
+              detailed view of your plans, your targets, and your concerns, we
+              can provide you with a tailor made solution
+            </p>
+          </div>
+          <!--Для підпосилань Audit & Consulting-------------___________________________-->
+          <!--1_1-->
+          <div id="sub-sub-container-1_1" class="sub-sub-container">
+            <h3
+              class="sub-sub-title"
+              data-translate="Procurement Strategy Development"
+            >
+              Procurement Strategy Development
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Depending on the quantity, quality, delivery schedule, documentation requirements, and other needs you may have, we are able to select and recommend the ideal strategy for your procurement"
+            >
+              Depending on the quantity, quality, delivery schedule,
+              documentation requirements, and other needs you may have, we are
+              able to select and recommend the ideal strategy for your
+              procurement
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="By carefully monitoring and utilizing the methods below, we are able to guarantee you a highly efficient and secure supply chain:
         - Time of Order 
         - Supplier Analysis and Selection
         - Stock Procurement
         - Logistics Review
         - Price & Quality Optimization
-        - Cost and Capital Reduction">		 
-       By carefully monitoring and utilizing the methods below, we are able to guarantee you a highly efficient and secure supply chain:
-      - Order Quantity Analysis<br>
-      - Time of Order<br>
-      - Order Quantity Analysis<br>
-      - Supplier Analysis and Selection<br>
-      - Stock Procurement<br>
-      - Logistics Review<br>
-      - Price, Quality Optimization<br>
-      - Cost and Capital Reduction<br>
-		</p>
-	 </div>
-<!--1_2-->
-	 <div id="sub-sub-container-1_2" class="sub-sub-container">
-		<h3 class="sub-sub-title" data-translate="Supplier Evaluation">
-			Supplier Evaluation
-		</h3>
-		<p
-		  class="sub-sub-description"
-		  data-translate="Selecting the ideal supplier can be laborious and burdensome. This is why we provide you a multi-faceted evaluation of current and potential suppliers so we are certain they are able to reach and or exceed your needs">Selecting the ideal supplier can be laborious and burdensome. This is why we provide you a multi-faceted evaluation of current and potential suppliers so we are certain they are able to reach and or exceed your needs
-		</p>
-		<p
-		class="sub-sub-description-2"
-		data-translate="By utilizing comparative analysis and a complex evaluation of several suppliers, we can provide you with a transparent view of the materials used, quality of goods produced, capabilities, working conditions, management structure, internal quality control systems, financial situation, and numerous other variables">By utilizing comparative analysis and a complex evaluation of several suppliers, we can provide you with a transparent view of the materials used, quality of goods produced, capabilities, working conditions, management structure, internal quality control systems, financial situation, and numerous other variables
-	   </p>
-		<p
-		class="sub-sub-description-3"
-		data-translate="Once a supplier is selected the supplier evaluation continues. Following your first order we supervise the suppliers work during the order processing and provide an evaluation report after each order has been completed">Once a supplier is selected the supplier evaluation continues. Following your first order we supervise the suppliers work during the order processing and provide an evaluation report after each order has been completed</p>
-		</div>
-<!--1_3-->
-		<div id="sub-sub-container-1_3" class="sub-sub-container">
-			<h3 class="sub-sub-title" data-translate="Legal Support">Legal Support
-			</h3>
-			<p
-			  class="sub-sub-description"
-			  data-translate="Navigating the complex legal guidelines of overseas procurement can be arduous. The focus of our legal support goes beyond the secure procurement of your goods but, to obtain stable legal cooperation with your suppliers to avoid any controversy and misunderstandings">Navigating the complex legal guidelines of overseas procurement can be arduous. The focus of our legal support goes beyond the secure procurement of your goods but, to obtain stable legal cooperation with your suppliers to avoid any controversy and misunderstandings</p>
-			  <p
-			  class="sub-sub-description-2"
-			  data-translate="Our legal support provides you with a piece of mind that your intellectual property including products and trademarks are safe, and that your purchasing contracts are in accordance with Chinese legislation. If necessary, we are capable of taking legal action on our clients behalf and or mediating any disputes with suppliers">Our legal support provides you with a piece of mind that your intellectual property including products and trademarks are safe, and that your purchasing contracts are in accordance with Chinese legislation. If necessary, we are capable of taking legal action on our clients behalf and or mediating any disputes with suppliers</p>
-		</div>
-  <!--1_4-->			 
-  <div id="sub-sub-container-1_4" class="sub-sub-container">
-				<h3 class="sub-sub-title" data-translate="Market Research">Market Research
-				</h3>
-				<p
-				  class="sub-sub-description"
-				  data-translate="When an evaluation of a set of suppliers is not sufficient and it is required to look beyond the doors of the manufacturer, we are capable of providing in-depth market research">When an evaluation of a set of suppliers is not sufficient and it is required to look beyond the doors of the manufacturer, we are capable of providing in-depth market research</p>
-				  <p
-				  class="sub-sub-description-2"
-				  data-translate="This in-depth product and manufacturer market research provides you with a view of the key technical standard of products, areas of production, local features, possible difficulties, major manufacturers, ranges of prices, price factors, and many other variables that will aid in your decision making">This in-depth product and manufacturer market research provides you with a view of the key technical standard of products, areas of production, local features, possible difficulties, major manufacturers, ranges of prices, price factors, and many other variables that will aid in your decision making</p>
-				  <p
-				  class="sub-sub-description-3"
-				  data-translate="With the right data and information we can work together to find the ideal supplier and solution for your business needs">With the right data and information we can work together to find the ideal supplier and solution for your business needs</p>
-			  </div>
-					 <!--1_5-->
-				  <div id="sub-sub-container-1_5" class="sub-sub-container">
-					<h3 class="sub-sub-title" data-translate="Trade Financing">
-						Trade Financing
-					</h3>
-					<p
-					  class="sub-sub-description"
-					  data-translate="On a case by case basis, we will work with you on financial needs that may arise during your procurement. In order to reduce your financial load we offer different trade financing solutions">On a case by case basis, we will work with you on financial needs that may arise during your procurement. In order to reduce your financial load we offer different trade financing solutions</p>
-					  <p
-					  class="sub-sub-description-2"
-					  data-translate="Options are available for several markets and each situation is settled based on your circumstances, the order details, and the manufacturers position">Options are available for several markets and each situation is settled based on your circumstances, the order details, and the manufacturers position</p>
-				  </div>
-		<!--------------------------------->		
+        - Cost and Capital Reduction"
+            >
+              By carefully monitoring and utilizing the methods below, we are
+              able to guarantee you a highly efficient and secure supply chain:
+              - Order Quantity Analysis<br />
+              - Time of Order<br />
+              - Order Quantity Analysis<br />
+              - Supplier Analysis and Selection<br />
+              - Stock Procurement<br />
+              - Logistics Review<br />
+              - Price, Quality Optimization<br />
+              - Cost and Capital Reduction<br />
+            </p>
+          </div>
+          <!--1_2-->
+          <div id="sub-sub-container-1_2" class="sub-sub-container">
+            <h3 class="sub-sub-title" data-translate="Supplier Evaluation">
+              Supplier Evaluation
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Selecting the ideal supplier can be laborious and burdensome. This is why we provide you a multi-faceted evaluation of current and potential suppliers so we are certain they are able to reach and or exceed your needs"
+            >
+              Selecting the ideal supplier can be laborious and burdensome. This
+              is why we provide you a multi-faceted evaluation of current and
+              potential suppliers so we are certain they are able to reach and
+              or exceed your needs
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="By utilizing comparative analysis and a complex evaluation of several suppliers, we can provide you with a transparent view of the materials used, quality of goods produced, capabilities, working conditions, management structure, internal quality control systems, financial situation, and numerous other variables"
+            >
+              By utilizing comparative analysis and a complex evaluation of
+              several suppliers, we can provide you with a transparent view of
+              the materials used, quality of goods produced, capabilities,
+              working conditions, management structure, internal quality control
+              systems, financial situation, and numerous other variables
+            </p>
+            <p
+              class="sub-sub-description-3"
+              data-translate="Once a supplier is selected the supplier evaluation continues. Following your first order we supervise the suppliers work during the order processing and provide an evaluation report after each order has been completed"
+            >
+              Once a supplier is selected the supplier evaluation continues.
+              Following your first order we supervise the suppliers work during
+              the order processing and provide an evaluation report after each
+              order has been completed
+            </p>
+          </div>
+          <!--1_3-->
+          <div id="sub-sub-container-1_3" class="sub-sub-container">
+            <h3 class="sub-sub-title" data-translate="Legal Support">
+              Legal Support
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Navigating the complex legal guidelines of overseas procurement can be arduous. The focus of our legal support goes beyond the secure procurement of your goods but, to obtain stable legal cooperation with your suppliers to avoid any controversy and misunderstandings"
+            >
+              Navigating the complex legal guidelines of overseas procurement
+              can be arduous. The focus of our legal support goes beyond the
+              secure procurement of your goods but, to obtain stable legal
+              cooperation with your suppliers to avoid any controversy and
+              misunderstandings
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Our legal support provides you with a piece of mind that your intellectual property including products and trademarks are safe, and that your purchasing contracts are in accordance with Chinese legislation. If necessary, we are capable of taking legal action on our clients behalf and or mediating any disputes with suppliers"
+            >
+              Our legal support provides you with a piece of mind that your
+              intellectual property including products and trademarks are safe,
+              and that your purchasing contracts are in accordance with Chinese
+              legislation. If necessary, we are capable of taking legal action
+              on our clients behalf and or mediating any disputes with suppliers
+            </p>
+          </div>
+          <!--1_4-->
+          <div id="sub-sub-container-1_4" class="sub-sub-container">
+            <h3 class="sub-sub-title" data-translate="Market Research">
+              Market Research
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="When an evaluation of a set of suppliers is not sufficient and it is required to look beyond the doors of the manufacturer, we are capable of providing in-depth market research"
+            >
+              When an evaluation of a set of suppliers is not sufficient and it
+              is required to look beyond the doors of the manufacturer, we are
+              capable of providing in-depth market research
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="This in-depth product and manufacturer market research provides you with a view of the key technical standard of products, areas of production, local features, possible difficulties, major manufacturers, ranges of prices, price factors, and many other variables that will aid in your decision making"
+            >
+              This in-depth product and manufacturer market research provides
+              you with a view of the key technical standard of products, areas
+              of production, local features, possible difficulties, major
+              manufacturers, ranges of prices, price factors, and many other
+              variables that will aid in your decision making
+            </p>
+            <p
+              class="sub-sub-description-3"
+              data-translate="With the right data and information we can work together to find the ideal supplier and solution for your business needs"
+            >
+              With the right data and information we can work together to find
+              the ideal supplier and solution for your business needs
+            </p>
+          </div>
+          <!--1_5-->
+          <div id="sub-sub-container-1_5" class="sub-sub-container">
+            <h3 class="sub-sub-title" data-translate="Trade Financing">
+              Trade Financing
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="On a case by case basis, we will work with you on financial needs that may arise during your procurement. In order to reduce your financial load we offer different trade financing solutions"
+            >
+              On a case by case basis, we will work with you on financial needs
+              that may arise during your procurement. In order to reduce your
+              financial load we offer different trade financing solutions
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Options are available for several markets and each situation is settled based on your circumstances, the order details, and the manufacturers position"
+            >
+              Options are available for several markets and each situation is
+              settled based on your circumstances, the order details, and the
+              manufacturers position
+            </p>
+          </div>
+          <!--------------------------------->
 
-<!-- Process Management -->
-              <div class="sub-content">
-                <img
-                    class="arrow-gray"
-                    src="images/arrow-gray.png"
-                    alt="arrow-gray"/>
-						<a
-                  class="sub-tab"
-                  id="process-management"
-                  href="#process-management" data-translate="Process Management"
-                  >Process Management</a>
+          <!-- Process Management -->
+          <div class="sub-content">
+            <img
+              class="arrow-gray"
+              src="images/arrow-gray.png"
+              alt="arrow-gray"
+            />
+            <a
+              class="sub-tab"
+              id="process-management"
+              href="#process-management"
+              data-translate="Process Management"
+              >Process Management</a
+            >
 
-                <div class="dropdown-container">
-                  <a id="design" href="#" data-translate="Workflow Design">- Workflow Design</a>
-                  <a id="planning" href="#" data-translate="Procurement Planning & Scheduling">- Procurement Planning &  Scheduling</a>
-                  <a id="negotiation" href="#" data-translate="Negotiation Support">- Negotiation Support</a>
-                  <a id="relationship" href="#"  data-translate="Supplier Relationship Management">- Supplier Relationship Management</a>
-                  <a id="order" href="#" data-translate="Order Progress Supervision">- Order Progress Supervision</a>
-                  <a id="control" href="#" data-translate="Documentation Control">- Documentation Control</a>
-                </div>
-				  </div>
+            <div class="dropdown-container">
+              <a id="design" href="#" data-translate="Workflow Design"
+                >- Workflow Design</a
+              >
+              <a
+                id="planning"
+                href="#"
+                data-translate="Procurement Planning & Scheduling"
+                >- Procurement Planning & Scheduling</a
+              >
+              <a id="negotiation" href="#" data-translate="Negotiation Support"
+                >- Negotiation Support</a
+              >
+              <a
+                id="relationship"
+                href="#"
+                data-translate="Supplier Relationship Management"
+                >- Supplier Relationship Management</a
+              >
+              <a id="order" href="#" data-translate="Order Progress Supervision"
+                >- Order Progress Supervision</a
+              >
+              <a id="control" href="#" data-translate="Documentation Control"
+                >- Documentation Control</a
+              >
+            </div>
+          </div>
 
-                <div id="sub-container-2">
-                  <h3 class="sub-title" data-translate="Process Management">
-                    Process Management
-                  </h3>
-                  <p
-                    class="sub-description"
-                    data-translate="Effective interactions with suppliers is one of the key factors for efficient procurement, and the total result often depends on the organization of work, a mutual understanding, and solid partner relationships"
-                  >
-                    Effective interactions with suppliers is one of the key
-                    factors for efficient procurement, and the total result
-                    often depends on the organization of work, a mutual
-                    understanding, and solid partner relationships
-                  </p>
-                </div>
-<!--Для підпосилань Process Management-------------___________________________-->
-<!--2_1-->
-<div id="sub-sub-container-2_1">
-	<h3 class="sub-sub-title" data-translate="Workflow Design">Workflow Design</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="By overlaying your company structure on the experience we have with different retailers and suppliers, we will coordinate and if necessary re-design work flow and processes in order to maximize your procurement from China">By overlaying your company structure on the experience we have with different retailers and suppliers, we will coordinate and if necessary re-design work flow and processes in order to maximize your procurement from China</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="By focusing on scheduling, order processing, check-points for confirmation and control, and many other key points, we can promise the best result and efficient control of the procurement of the products you need">By focusing on scheduling, order processing, check-points for confirmation and control, and many other key points, we can promise the best result and efficient control of the procurement of the products you need</p>
-	</div>
-  <!--2_2-->
-  <div id="sub-sub-container-2_2">
-	<h3 class="sub-sub-title" data-translate="Procurement Planning & Scheduling">Procurement Planning & Scheduling</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="We are very sensitive and aware of the complicated nature of a retail chains delivery schedule. We will work to understand your specific requirements and pay special attention to your delivery times, your product variety and volume, your seasonal needs, your manufacturers schedule, and many other factors">We are very sensitive and aware of the complicated nature of a retail chains delivery schedule. We will work to understand your specific requirements and pay special attention to your delivery times, your product variety and volume, your seasonal needs, your manufacturers schedule, and many other factors</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="We will coordinate long term schedules and design short term plans together with you to assure the goods you need are delivered at the moment they are needed by your customers">We will coordinate long term schedules and design short term plans together with you to assure the goods you need are delivered at the moment they are needed by your customers</p>
-	  </div>
-	  <!--2_3-->
-  <div id="sub-sub-container-2_3">
-	<h3 class="sub-sub-title" data-translate="Negotiation Support">Negotiation Support
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="There are times when it is quite difficult to reach a compromise between a buyers wishes and a sellers capability. Fortunately, with our experience, we have come across and been able to successfully resolve many unique situations">There are times when it is quite difficult to reach a compromise between a buyers wishes and a sellers capability. Fortunately, with our experience, we have come across and been able to successfully resolve many unique situations</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="With our support, when required, we can negotiate with manufacturers on your behalf with the aim of finding a mutually beneficial solution which will build a base for further cooperation in the future">With our support, when required, we can negotiate with manufacturers on your behalf with the aim of finding a mutually beneficial solution which will build a base for further cooperation in the future</p>
-  </div>
-	  	  <!--2_4-->
-  <div id="sub-sub-container-2_4">
-	<h3 class="sub-sub-title" data-translate="Suppliers Relationship Management">Suppliers Relationship Management</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="To support and continue the excellent relationships we have between our clients and manufacturers, we do a lot of work to understand each party needs, then help them meet their requirements">To support and continue the excellent relationships we have between our clients and manufacturers, we do a lot of work to understand each party needs, then help them meet their requirements</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="By working with us, we not only provide your needs and desires to the manufacturer but, we provide you with an understanding of the needs of the manufacturer. This mutual understanding and open relationship creates the foundation for successful long-term cooperation">By working with us, we not only provide your needs and desires to the manufacturer but, we provide you with an understanding of the needs of the manufacturer. This mutual understanding and open relationship creates the foundation for successful long-term cooperation</p>
-	  </div>
-	   <!--2_5-->
-  <div id="sub-sub-container-2_5">
-	<h3 class="sub-sub-title" data-translate="Order Progress Supervising">Order Progress Supervising</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Together with quality assurance, lead time control is one of the most important factors in efficient procurement. Depending on the manufacturers you work with and your order details, we put in place checkpoints all along the main milestones of the order process">Together with quality assurance, lead time control is one of the most important factors in efficient procurement. Depending on the manufacturers you work with and your order details, we put in place checkpoints all along the main milestones of the order process</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="This control along the manufacturing stages not only allows to us to promise you on-time delivery, but enables us to make needed adjustments far in advance, if necessary">This control along the manufacturing stages not only allows to us to promise you on-time delivery, but enables us to make needed adjustments far in advance, if necessary</p>
-  </div>
-	     <!--2_6-->
-  <div id="sub-sub-container-2_6">
-	<h3 class="sub-sub-title" data-translate="Documentation Control">Documentation Control
-			</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Once an order is placed, we begin diligently preparing all of the required documents you will need to make import procedures smooth and fast. Accuracy and precision is key, therefore, we carefully study the required documents needed by product and prepare this well in advance">Once an order is placed, we begin diligently preparing all of the required documents you will need to make import procedures smooth and fast. Accuracy and precision is key, therefore, we carefully study the required documents needed by product and prepare this well in advance</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="Additionally, as orders pass our pre-shipment inspection, the data from the inspection is used for a final documentation check. With years of experience moving products out of China, we can help you avoid making costly mistakes from overlooking a minor piece of paperwork">Additionally, as orders pass our pre-shipment inspection, the data from the inspection is used for a final documentation check. With years of experience moving products out of China, we can help you avoid making costly mistakes from overlooking a minor piece of paperwork</p>
-	  </div>
-   <!-- ---------------------------------->
+          <div id="sub-container-2">
+            <h3 class="sub-title" data-translate="Process Management">
+              Process Management
+            </h3>
+            <p
+              class="sub-description"
+              data-translate="Effective interactions with suppliers is one of the key factors for efficient procurement, and the total result often depends on the organization of work, a mutual understanding, and solid partner relationships"
+            >
+              Effective interactions with suppliers is one of the key factors
+              for efficient procurement, and the total result often depends on
+              the organization of work, a mutual understanding, and solid
+              partner relationships
+            </p>
+          </div>
+          <!--Для підпосилань Process Management-------------___________________________-->
+          <!--2_1-->
+          <div id="sub-sub-container-2_1">
+            <h3 class="sub-sub-title" data-translate="Workflow Design">
+              Workflow Design
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="By overlaying your company structure on the experience we have with different retailers and suppliers, we will coordinate and if necessary re-design work flow and processes in order to maximize your procurement from China"
+            >
+              By overlaying your company structure on the experience we have
+              with different retailers and suppliers, we will coordinate and if
+              necessary re-design work flow and processes in order to maximize
+              your procurement from China
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="By focusing on scheduling, order processing, check-points for confirmation and control, and many other key points, we can promise the best result and efficient control of the procurement of the products you need"
+            >
+              By focusing on scheduling, order processing, check-points for
+              confirmation and control, and many other key points, we can
+              promise the best result and efficient control of the procurement
+              of the products you need
+            </p>
+          </div>
+          <!--2_2-->
+          <div id="sub-sub-container-2_2">
+            <h3
+              class="sub-sub-title"
+              data-translate="Procurement Planning & Scheduling"
+            >
+              Procurement Planning & Scheduling
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="We are very sensitive and aware of the complicated nature of a retail chains delivery schedule. We will work to understand your specific requirements and pay special attention to your delivery times, your product variety and volume, your seasonal needs, your manufacturers schedule, and many other factors"
+            >
+              We are very sensitive and aware of the complicated nature of a
+              retail chains delivery schedule. We will work to understand your
+              specific requirements and pay special attention to your delivery
+              times, your product variety and volume, your seasonal needs, your
+              manufacturers schedule, and many other factors
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="We will coordinate long term schedules and design short term plans together with you to assure the goods you need are delivered at the moment they are needed by your customers"
+            >
+              We will coordinate long term schedules and design short term plans
+              together with you to assure the goods you need are delivered at
+              the moment they are needed by your customers
+            </p>
+          </div>
+          <!--2_3-->
+          <div id="sub-sub-container-2_3">
+            <h3 class="sub-sub-title" data-translate="Negotiation Support">
+              Negotiation Support
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="There are times when it is quite difficult to reach a compromise between a buyers wishes and a sellers capability. Fortunately, with our experience, we have come across and been able to successfully resolve many unique situations"
+            >
+              There are times when it is quite difficult to reach a compromise
+              between a buyers wishes and a sellers capability. Fortunately,
+              with our experience, we have come across and been able to
+              successfully resolve many unique situations
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="With our support, when required, we can negotiate with manufacturers on your behalf with the aim of finding a mutually beneficial solution which will build a base for further cooperation in the future"
+            >
+              With our support, when required, we can negotiate with
+              manufacturers on your behalf with the aim of finding a mutually
+              beneficial solution which will build a base for further
+              cooperation in the future
+            </p>
+          </div>
+          <!--2_4-->
+          <div id="sub-sub-container-2_4">
+            <h3
+              class="sub-sub-title"
+              data-translate="Suppliers Relationship Management"
+            >
+              Suppliers Relationship Management
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="To support and continue the excellent relationships we have between our clients and manufacturers, we do a lot of work to understand each party needs, then help them meet their requirements"
+            >
+              To support and continue the excellent relationships we have
+              between our clients and manufacturers, we do a lot of work to
+              understand each party needs, then help them meet their
+              requirements
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="By working with us, we not only provide your needs and desires to the manufacturer but, we provide you with an understanding of the needs of the manufacturer. This mutual understanding and open relationship creates the foundation for successful long-term cooperation"
+            >
+              By working with us, we not only provide your needs and desires to
+              the manufacturer but, we provide you with an understanding of the
+              needs of the manufacturer. This mutual understanding and open
+              relationship creates the foundation for successful long-term
+              cooperation
+            </p>
+          </div>
+          <!--2_5-->
+          <div id="sub-sub-container-2_5">
+            <h3
+              class="sub-sub-title"
+              data-translate="Order Progress Supervising"
+            >
+              Order Progress Supervising
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Together with quality assurance, lead time control is one of the most important factors in efficient procurement. Depending on the manufacturers you work with and your order details, we put in place checkpoints all along the main milestones of the order process"
+            >
+              Together with quality assurance, lead time control is one of the
+              most important factors in efficient procurement. Depending on the
+              manufacturers you work with and your order details, we put in
+              place checkpoints all along the main milestones of the order
+              process
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="This control along the manufacturing stages not only allows to us to promise you on-time delivery, but enables us to make needed adjustments far in advance, if necessary"
+            >
+              This control along the manufacturing stages not only allows to us
+              to promise you on-time delivery, but enables us to make needed
+              adjustments far in advance, if necessary
+            </p>
+          </div>
+          <!--2_6-->
+          <div id="sub-sub-container-2_6">
+            <h3 class="sub-sub-title" data-translate="Documentation Control">
+              Documentation Control
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Once an order is placed, we begin diligently preparing all of the required documents you will need to make import procedures smooth and fast. Accuracy and precision is key, therefore, we carefully study the required documents needed by product and prepare this well in advance"
+            >
+              Once an order is placed, we begin diligently preparing all of the
+              required documents you will need to make import procedures smooth
+              and fast. Accuracy and precision is key, therefore, we carefully
+              study the required documents needed by product and prepare this
+              well in advance
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Additionally, as orders pass our pre-shipment inspection, the data from the inspection is used for a final documentation check. With years of experience moving products out of China, we can help you avoid making costly mistakes from overlooking a minor piece of paperwork"
+            >
+              Additionally, as orders pass our pre-shipment inspection, the data
+              from the inspection is used for a final documentation check. With
+              years of experience moving products out of China, we can help you
+              avoid making costly mistakes from overlooking a minor piece of
+              paperwork
+            </p>
+          </div>
+          <!-- ---------------------------------->
 
-    <!--  Sourcing-->
-                <div class="sub-content">
-                  <img
-                      class="arrow-gray"
-                      src="images/arrow-gray.png"
-                      alt="arrow-gray"/>                  
-						  <a class="sub-tab" id="sourcing" href="#sourcing" data-translate="Sourcing"
-                    >Sourcing</a>
+          <!--  Sourcing-->
+          <div class="sub-content">
+            <img
+              class="arrow-gray"
+              src="images/arrow-gray.png"
+              alt="arrow-gray"
+            />
+            <a
+              class="sub-tab"
+              id="sourcing"
+              href="#sourcing"
+              data-translate="Sourcing"
+              >Sourcing</a
+            >
 
-                  <div class="dropdown-container">
-                    <a id="management"
-                      href="#"
-                      data-translate="ODM & OEM Manufacturing Management"
-                      >- ODM & OEM Manufacturing Management</a>
-                    <a id="packaging" href="#" data-translate="Packaging & Labeling Solutions">- Packaging, Labeling Solutions</a>
-                    <a id="product" href="#"
-                      data-translate="Product Adjustment & Improvement">- Product Adjustment, Improvement</a>
-                    <a id="stock" href="#" data-translate="Leftover Stock Procurement">- Leftover Stock Procurement</a>
-                   <a id="l_procurement" href="#" data-translate="LCL Procurement">- LCL Procurement</a>
-                  </div>
-					 </div>
+            <div class="dropdown-container">
+              <a
+                id="management"
+                href="#"
+                data-translate="ODM & OEM Manufacturing Management"
+                >- ODM & OEM Manufacturing Management</a
+              >
+              <a
+                id="packaging"
+                href="#"
+                data-translate="Packaging & Labeling Solutions"
+                >- Packaging, Labeling Solutions</a
+              >
+              <a
+                id="product"
+                href="#"
+                data-translate="Product Adjustment & Improvement"
+                >- Product Adjustment, Improvement</a
+              >
+              <a id="stock" href="#" data-translate="Leftover Stock Procurement"
+                >- Leftover Stock Procurement</a
+              >
+              <a id="l_procurement" href="#" data-translate="LCL Procurement"
+                >- LCL Procurement</a
+              >
+            </div>
+          </div>
 
-                  <div id="sub-container-3">
-                    <h3 class="sub-title" data-translate="Sourcing">
-                      Sourcing
-                    </h3>
-                    <p
-                      class="sub-description"
-                      data-translate="With a vast database of trustworthy suppliers and years of product experience, we can offer you a wide range of custom services and solutions that will you provide you with the flexibility and capability to receive the products you need, in the packaging you desire, and all the while, at the price you demand">With a vast database of trustworthy suppliers and years of
-                      product experience, we can offer you a wide range of
-                      custom services and solutions that will you provide you
-                      with the flexibility and capability to receive the
-                      products you need, in the packaging you desire, and all
-                      the while, at the price you demand
-                    </p>
-                  </div>
+          <div id="sub-container-3">
+            <h3 class="sub-title" data-translate="Sourcing">Sourcing</h3>
+            <p
+              class="sub-description"
+              data-translate="With a vast database of trustworthy suppliers and years of product experience, we can offer you a wide range of custom services and solutions that will you provide you with the flexibility and capability to receive the products you need, in the packaging you desire, and all the while, at the price you demand"
+            >
+              With a vast database of trustworthy suppliers and years of product
+              experience, we can offer you a wide range of custom services and
+              solutions that will you provide you with the flexibility and
+              capability to receive the products you need, in the packaging you
+              desire, and all the while, at the price you demand
+            </p>
+          </div>
 
-<!--Для підпосилань Sourcing-------------___________________________-->
-	  <!--3_1-->
-	  <div id="sub-sub-container-3_1">
-		<h3 class="sub-sub-title" data-translate="ODM & OEM Manufacturing Management">
-			ODM & OEM Manufacturing Management
-		</h3>
-		<p
-		  class="sub-sub-description"
-		  data-translate="The development and expansion of a private brand for any retailer can be difficult. To help make this easier, we provide both ODM & OEM order management solutions. Whether you are looking to develop a brand new product idea or take advantage of the ready-made offers we have in place, we have the solution for you">The development and expansion of a private brand for any retailer can be difficult. To help make this easier, we provide both ODM, OEM order management solutions. Whether you are looking to develop a brand new product idea or take advantage of the ready-made offers we have in place, we have the solution for you</p>
-		  <p
-		  class="sub-sub-description-2"
-		  data-translate="The key points of any ODM & OEM project are a suppliers competence, responsiveness, and the controls they have in place during the initial order stages. With our experience in private label order management and our evaluation of special suppliers we can help you with any ODM & OEM projects you may have in mind">"The key points of any ODM, OEM project are a suppliers competence, responsiveness, and the controls they have in place during the initial order stages. With our experience in private label order management and our evaluation of special suppliers we can help you with any ODM, OEM projects you may have in mind</p>
-	  </div>
-<!--3_2-->
-<div id="sub-sub-container-3_2">
-	<h3 class="sub-sub-title" data-translate="Packaging & Labeling Solutions">
-		Packaging & Labeling Solutions
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Product packaging and labeling is a key part in the logistics process. Whether or not your packaging and labeling needs are basic or complicated, we have the experience to help. We can provide support in the creation of bar codes and native language labels. We can help you increase your sales by assisting in the development of, product packaging, point-of-purchase displays, pallet displays, tray displays, or show boxes">Product packaging and labeling is a key part in the logistics process. Whether or not your packaging and labeling needs are basic or complicated, we have the experience to help. We can provide support in the creation of bar codes and native language labels. We can help you increase your sales by assisting in the development of, product packaging, point-of-purchase displays, pallet displays, tray displays, or show boxes</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="At times, manufacturer packing and labeling options can be limited. If that is the case; we make it possible for you to outsource your packaging and labeling needs to professional printing companies, who will then pass the material to the manufacturer for final packaging, or to us for final touches in our own facilities">"At times, manufacturer packing and labeling options can be limited. If that is the case; we make it possible for you to outsource your packaging and labeling needs to professional printing companies, who will then pass the material to the manufacturer for final packaging, or to us for final touches in our own facilities</p>
-</div>
-<!--3_3-->
-<div id="sub-sub-container-3_3">
-	<h3 class="sub-sub-title" data-translate="Product Adjustment & Improvement">
-		Product Adjustment & Improvement
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="In a case where a product does not meet your needs, we are capable of working with suppliers and manufacturers on making the needed adjustments to reach your satisfaction requirements. Whether we are selecting alternate materials, switching manufacturers, or changing technical specifications, we can consult you on your best options">In a case where a product does not meet your needs, we are capable of working with suppliers and manufacturers on making the needed adjustments to reach your satisfaction requirements. Whether we are selecting alternate materials, switching manufacturers, or changing technical specifications, we can consult you on your best options</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="Getting the right product, at the right price, with the right design and quality, takes experience and connections when working with Chinese manufacturers. We can help you negotiate to get the exact price you want, the exact quality you need, or the best value for your money">Getting the right product, at the right price, with the right design and quality, takes experience and connections when working with Chinese manufacturers. We can help you negotiate to get the exact price you want, the exact quality you need, or the best value for your money</p>
-</div>
-<!--3_4-->
-<div id="sub-sub-container-3_4">
-	<h3 class="sub-sub-title" data-translate="Leftover Stock Procurement">Leftover Stock Procurement
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Overtime, all suppliers get into situations where they are overstocked and have “leftover” merchandise that must be sold. This typically occurs due to over-production and customer refusals. There are huge advantages and disadvantages to procuring products that are deemed “leftover”. You can receive discounted prices and immediate shipment but, at the same time be faced with quality risks">Overtime, all suppliers get into situations where they are overstocked and have “leftover” merchandise that must be sold. This typically occurs due to over-production and customer refusals. There are huge advantages and disadvantages to procuring products that are deemed “leftover”. You can receive discounted prices and immediate shipment but, at the same time be faced with quality risks</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="We monitor the market for suitable and interesting leftover stock product offers and when the orders are processed we do special quality control checks, including; defect sorting, repacking, and relabeling if required. With our support, you can be confident that your leftover stock procurement meets the stated criteria from the manufacturer">"We monitor the market for suitable and interesting leftover stock product offers and when the orders are processed we do special quality control checks, including; defect sorting, repacking, and relabeling if required. With our support, you can be confident that your leftover stock procurement meets the stated criteria from the manufacturer</p>
-	  </div>
-<!--3_5-->
-<div id="sub-sub-container-3_5">
-	<h3 class="sub-sub-title" data-translate="LCL Procurement">LCL Procurement
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="We offer LCL (Less than container loading) procurement, when your order from one supplier is less than a full container. When your order is shipped, it is consolidated with other orders either, on manufacturers premises, or in our warehouses. With LCL, we can satisfy your needs for low volume orders, due to limited consumption or due to partial shipments for complex delivery plans">We offer LCL (Less than container loading) procurement, when your order from one supplier is less than a full container. When your order is shipped, it is consolidated with other orders either, on manufacturers premises, or in our warehouses. With LCL, we can satisfy your needs for low volume orders, due to limited consumption or due to partial shipments for complex delivery plans</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="Additionally, with our presence in Yiwu, China, we can offer procurement from the Yiwu market and take advantage of almost no MOQ requirements and short delivery times. Our office and warehouse in Yiw allows us to process your orders, provide labeling, do quality control, and other offer other logistics management solutions">Additionally, with our presence in Yiwu, China, we can offer procurement from the Yiwu market and take advantage of almost no MOQ requirements and short delivery times. Our office and warehouse in Yiw allows us to process your orders, provide labeling, do quality control, and other offer other logistics management solutions</p>
-	  </div>
-<!---------------------------------------->
+          <!--Для підпосилань Sourcing-------------___________________________-->
+          <!--3_1-->
+          <div id="sub-sub-container-3_1">
+            <h3
+              class="sub-sub-title"
+              data-translate="ODM & OEM Manufacturing Management"
+            >
+              ODM & OEM Manufacturing Management
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="The development and expansion of a private brand for any retailer can be difficult. To help make this easier, we provide both ODM & OEM order management solutions. Whether you are looking to develop a brand new product idea or take advantage of the ready-made offers we have in place, we have the solution for you"
+            >
+              The development and expansion of a private brand for any retailer
+              can be difficult. To help make this easier, we provide both ODM,
+              OEM order management solutions. Whether you are looking to develop
+              a brand new product idea or take advantage of the ready-made
+              offers we have in place, we have the solution for you
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="The key points of any ODM & OEM project are a suppliers competence, responsiveness, and the controls they have in place during the initial order stages. With our experience in private label order management and our evaluation of special suppliers we can help you with any ODM & OEM projects you may have in mind"
+            >
+              "The key points of any ODM, OEM project are a suppliers
+              competence, responsiveness, and the controls they have in place
+              during the initial order stages. With our experience in private
+              label order management and our evaluation of special suppliers we
+              can help you with any ODM, OEM projects you may have in mind
+            </p>
+          </div>
+          <!--3_2-->
+          <div id="sub-sub-container-3_2">
+            <h3
+              class="sub-sub-title"
+              data-translate="Packaging & Labeling Solutions"
+            >
+              Packaging & Labeling Solutions
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Product packaging and labeling is a key part in the logistics process. Whether or not your packaging and labeling needs are basic or complicated, we have the experience to help. We can provide support in the creation of bar codes and native language labels. We can help you increase your sales by assisting in the development of, product packaging, point-of-purchase displays, pallet displays, tray displays, or show boxes"
+            >
+              Product packaging and labeling is a key part in the logistics
+              process. Whether or not your packaging and labeling needs are
+              basic or complicated, we have the experience to help. We can
+              provide support in the creation of bar codes and native language
+              labels. We can help you increase your sales by assisting in the
+              development of, product packaging, point-of-purchase displays,
+              pallet displays, tray displays, or show boxes
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="At times, manufacturer packing and labeling options can be limited. If that is the case; we make it possible for you to outsource your packaging and labeling needs to professional printing companies, who will then pass the material to the manufacturer for final packaging, or to us for final touches in our own facilities"
+            >
+              "At times, manufacturer packing and labeling options can be
+              limited. If that is the case; we make it possible for you to
+              outsource your packaging and labeling needs to professional
+              printing companies, who will then pass the material to the
+              manufacturer for final packaging, or to us for final touches in
+              our own facilities
+            </p>
+          </div>
+          <!--3_3-->
+          <div id="sub-sub-container-3_3">
+            <h3
+              class="sub-sub-title"
+              data-translate="Product Adjustment & Improvement"
+            >
+              Product Adjustment & Improvement
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="In a case where a product does not meet your needs, we are capable of working with suppliers and manufacturers on making the needed adjustments to reach your satisfaction requirements. Whether we are selecting alternate materials, switching manufacturers, or changing technical specifications, we can consult you on your best options"
+            >
+              In a case where a product does not meet your needs, we are capable
+              of working with suppliers and manufacturers on making the needed
+              adjustments to reach your satisfaction requirements. Whether we
+              are selecting alternate materials, switching manufacturers, or
+              changing technical specifications, we can consult you on your best
+              options
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Getting the right product, at the right price, with the right design and quality, takes experience and connections when working with Chinese manufacturers. We can help you negotiate to get the exact price you want, the exact quality you need, or the best value for your money"
+            >
+              Getting the right product, at the right price, with the right
+              design and quality, takes experience and connections when working
+              with Chinese manufacturers. We can help you negotiate to get the
+              exact price you want, the exact quality you need, or the best
+              value for your money
+            </p>
+          </div>
+          <!--3_4-->
+          <div id="sub-sub-container-3_4">
+            <h3
+              class="sub-sub-title"
+              data-translate="Leftover Stock Procurement"
+            >
+              Leftover Stock Procurement
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Overtime, all suppliers get into situations where they are overstocked and have “leftover” merchandise that must be sold. This typically occurs due to over-production and customer refusals. There are huge advantages and disadvantages to procuring products that are deemed “leftover”. You can receive discounted prices and immediate shipment but, at the same time be faced with quality risks"
+            >
+              Overtime, all suppliers get into situations where they are
+              overstocked and have “leftover” merchandise that must be sold.
+              This typically occurs due to over-production and customer
+              refusals. There are huge advantages and disadvantages to procuring
+              products that are deemed “leftover”. You can receive discounted
+              prices and immediate shipment but, at the same time be faced with
+              quality risks
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="We monitor the market for suitable and interesting leftover stock product offers and when the orders are processed we do special quality control checks, including; defect sorting, repacking, and relabeling if required. With our support, you can be confident that your leftover stock procurement meets the stated criteria from the manufacturer"
+            >
+              "We monitor the market for suitable and interesting leftover stock
+              product offers and when the orders are processed we do special
+              quality control checks, including; defect sorting, repacking, and
+              relabeling if required. With our support, you can be confident
+              that your leftover stock procurement meets the stated criteria
+              from the manufacturer
+            </p>
+          </div>
+          <!--3_5-->
+          <div id="sub-sub-container-3_5">
+            <h3 class="sub-sub-title" data-translate="LCL Procurement">
+              LCL Procurement
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="We offer LCL (Less than container loading) procurement, when your order from one supplier is less than a full container. When your order is shipped, it is consolidated with other orders either, on manufacturers premises, or in our warehouses. With LCL, we can satisfy your needs for low volume orders, due to limited consumption or due to partial shipments for complex delivery plans"
+            >
+              We offer LCL (Less than container loading) procurement, when your
+              order from one supplier is less than a full container. When your
+              order is shipped, it is consolidated with other orders either, on
+              manufacturers premises, or in our warehouses. With LCL, we can
+              satisfy your needs for low volume orders, due to limited
+              consumption or due to partial shipments for complex delivery plans
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Additionally, with our presence in Yiwu, China, we can offer procurement from the Yiwu market and take advantage of almost no MOQ requirements and short delivery times. Our office and warehouse in Yiw allows us to process your orders, provide labeling, do quality control, and other offer other logistics management solutions"
+            >
+              Additionally, with our presence in Yiwu, China, we can offer
+              procurement from the Yiwu market and take advantage of almost no
+              MOQ requirements and short delivery times. Our office and
+              warehouse in Yiw allows us to process your orders, provide
+              labeling, do quality control, and other offer other logistics
+              management solutions
+            </p>
+          </div>
+          <!---------------------------------------->
 
-<!-- Quality Assurance -->
-                  <div class="sub-content">
-                    <img
-                        class="arrow-gray"
-                        src="images/arrow-gray.png"
-                        alt="arrow-gray"/>
-							 <a
-                      class="sub-tab"
-                      id="quality-assurance"
-                      href="#" data-translate="Quality Assurance"
-                      >Quality Assurance</a >
+          <!-- Quality Assurance -->
+          <div class="sub-content">
+            <img
+              class="arrow-gray"
+              src="images/arrow-gray.png"
+              alt="arrow-gray"
+            />
+            <a
+              class="sub-tab"
+              id="quality-assurance"
+              href="#"
+              data-translate="Quality Assurance"
+              >Quality Assurance</a
+            >
 
-                    <div class="dropdown-container">
-                      <a class="sub-sub-tab" id="coordination" href="#coordination" data-translate="Quality Criteria Coordination">- Quality Criteria Coordination</a>
-                      <a class="sub-sub-tab" id="inspection" href="#inspection" 
-                        data-translate="Multi-Stage Quality Inspection">- Multi-Stage Quality Inspection</a>
-                      <a class="sub-sub-tab" id="monitoring" href="#monitoring" data-translate="Production Monitoring">- Production Monitoring</a>
-                      <a class="sub-sub-tab" id="sorting" href="#sorting" data-translate="Defect Sorting">- Defect Sorting</a>
-                      <a class="sub-sub-tab" id="certification" href="#certification"
-                        data-translate="Laboratory Testing & Certification">- Laboratory Testing & Certification</a>
-                      <a class="sub-sub-tab"  id="supervision" href="#supervision" data-translate="Container Loading Supervision">- Container Loading Supervision</a>
-                    </div>
-						</div>
+            <div class="dropdown-container">
+              <a
+                class="sub-sub-tab"
+                id="coordination"
+                href="#coordination"
+                data-translate="Quality Criteria Coordination"
+                >- Quality Criteria Coordination</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="inspection"
+                href="#inspection"
+                data-translate="Multi-Stage Quality Inspection"
+                >- Multi-Stage Quality Inspection</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="monitoring"
+                href="#monitoring"
+                data-translate="Production Monitoring"
+                >- Production Monitoring</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="sorting"
+                href="#sorting"
+                data-translate="Defect Sorting"
+                >- Defect Sorting</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="certification"
+                href="#certification"
+                data-translate="Laboratory Testing & Certification"
+                >- Laboratory Testing & Certification</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="supervision"
+                href="#supervision"
+                data-translate="Container Loading Supervision"
+                >- Container Loading Supervision</a
+              >
+            </div>
+          </div>
 
-                    <div id="sub-container-4">
-                      <h3 class="sub-title" data-translate="Quality Assurance">Quality Assurance</h3>
-                      <p
-                        class="sub-description"
-                        data-translate="One of the key factors to our success and our ability to make you successful is our keen attention to the quality of your supplied goods. From our experience, when and if quality issues arise, they occur due to three main reasons" >One of the key factors to our success and our ability to make you successful is our keen attention to the quality of your supplied goods. From our experience, when and if quality issues arise, they occur due to three main
-                        reasons
-                      </p>
-                      <p
-                        class="sub-description-2"
-                        data-translate="Firstly, 50% of the time there is a total lack of understanding of the quality requirements between the supplier and client. Secondly, 35% of the time suppliers disregard requirements all together. Lastly, 10% of the time there are intentional cost and quality reductions">Firstly, 50% of the time there is a total lack of
-                        understanding of the quality requirements between the
-                        supplier and client. Secondly, 35% of the time suppliers
-                        disregard requirements all together. Lastly, 10% of the
-                        time there are intentional cost and quality reductions.
-                      </p>
-                      <p
-                        class="sub-description-3"
-                        data-translate="In order to avoid and eliminate the above issues we have adopted and utilize many different processes and tools to guarantee you receive the products you require"
-                      >In order to avoid and eliminate the above issues we have
-                        adopted and utilize many different processes and tools
-                        to guarantee you receive the products you require
-                      </p>
-                    </div>
-<!--Для підпосилань Quality Assurance-------------___________________________-->
-	  <!--4_1-->
-	  <div id="sub-sub-container-4_1">
-		<h3 class="sub-sub-title" data-translate="Quality Criteria Coordination">
-			Quality Criteria Coordination
-		</h3>
-		<p
-		  class="sub-sub-description"
-		  data-translate="As mentioned, when quality issues occur, 50% of the time this is due to a complete and total misunderstanding of the quality requirements between the supplier and the customer. This can be avoided by identifying and documenting all the aspects of quality long before an order is made. By validating manufacturers capabilities to reach your quality requirements while documenting the requirements you have, we can eliminate and minimize any potential for miscommunication">As mentioned, when quality issues occur, 50% of the time this is due to a complete and total misunderstanding of the quality requirements between the supplier and the customer. This can be avoided by identifying and documenting all the aspects of quality long before an order is made. By validating manufacturers capabilities to reach your quality requirements while documenting the requirements you have, we can eliminate and minimize any potential for miscommunication</p>
-		  <p
-		  class="sub-sub-description-2"
-		  data-translate="We help you understand the possible quality / price levels and help you set the quality criteria and defect definitions, based on either custom-made quality criteria or on AQL (Acceptable Quality Level, as per standard MIL-STD-105E/ISO 2859-1 (1999) or Acceptable Quality Limits as per standard ANSI/ASQ Z1.4-2003)">We help you understand the possible quality / price levels and help you set the quality criteria and defect definitions, based on either custom-made quality criteria or on AQL (Acceptable Quality Level, as per standard MIL-STD-105E/ISO 2859-1 (1999) or Acceptable Quality Limits as per standard ANSI/ASQ Z1.4-2003)</p>
-	  </div>
-  <!--4_2-->
-  <div id="sub-sub-container-4_2">
-	<h3 class="sub-sub-title" data-translate="Multi-Stage Quality Inspection">
-		Multi-Stage Quality Inspection
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Depending on the product, order features, manufacturers situation, and other factors, we are capable of doing single stage, several stage, or even full cycle quality control in order to secure the quality and delivery time of your procurement. We verify workmanship, function, technical features, color, size, labels, marks, and any other parameters you require - all with a view to ensure that the contract specifications for product and packing are met">Depending on the product, order features, manufacturers situation, and other factors, we are capable of doing single stage, several stage, or even full cycle quality control in order to secure the quality and delivery time of your procurement. We verify workmanship, function, technical features, color, size, labels, marks, and any other parameters you require - all with a view to ensure that the contract specifications for product and packing are met</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="Broken into 4 steps, below are the services that enable us to provide you with the quality goods you require">Broken into 4 steps, below are the services that enable us to provide you with the quality goods you require</p>
-	  <h4  class="caption-1"
-	  data-translate="Pre-Production Inspection (PPI)">Pre-Production Inspection (PPI)</h4>
-	  <p
-	  class="sub-sub-description-3"
-	  data-translate="Pre-Production Inspection (PPI) is done before the production process even starts. This ensures, not only that the manufacturer understands all quality requirements but, the availability of corresponding raw materials, components, and facilities. This gives us an understanding of the manufacturing schedule and enables us to be aware of any possible quality and lead time deviations">Pre-Production Inspection (PPI) is done before the production process even starts. This ensures, not only that the manufacturer understands all quality requirements but, the availability of corresponding raw materials, components, and facilities. This gives us an understanding of the manufacturing schedule and enables us to be aware of any possible quality and lead time deviations</p>
-	  <h4  class="caption-2"
-	  data-translate="Initial Production Inspection (IPI)">Initial Production Inspection (IPI)</h4>
-	  <p
-	  class="sub-sub-description-4"
-	  data-translate="Initial Production Inspection has similar features and functions as the PPI but, extends to the exact order, the evaluation of the actual merchandise, and the actual manufacturing capacity. If necessary, certain order processing adjustments can be made">Initial Production Inspection has similar features and functions as the PPI but, extends to the exact order, the evaluation of the actual merchandise, and the actual manufacturing capacity. If necessary, certain order processing adjustments can be made</p>
-	  <h4 class="caption-3"
-	  data-translate="During Production Inspection (DPI)">During Production Inspection (DPI)</h4>
-	  <p
-	  class="sub-sub-description-5"
-	  data-translate="During Product Inspection s implemented when at least 15% of the total merchandise has been manufactured. During this time, we can confirm that all product parameters as well packing marking details conform to your agreed upon specifications">During Product Inspection s implemented when at least 15% of the total merchandise has been manufactured. During this time, we can confirm that all product parameters as well packing marking details conform to your agreed upon specifications</p>
-	  <h4  class="caption-4"
-	  data-translate="Pre-Shipment Inspection (PSI)">Pre-Shipment Inspection (PSI)</h4>
-	  <p
-	  class="sub-sub-description-6"
-	  data-translate="A Pre-Shipment Inspection is done when at least 85% of the the merchandise has been completed, packed, and is nearly ready for shipment. Our inspectors evaluate a statistically determined random sample of finished goods, based on an internationally recognized statistical random sampling techniques known as ANSI/ASQ Z1.4-2003, ISO 2859-1 or based our your AQL needs. This final inspection not only allows us to guarantee a final seal of quality but, it guarantees the accuracy of all your needed documentation">A Pre-Shipment Inspection is done when at least 85% of the the merchandise has been completed, packed, and is nearly ready for shipment. Our inspectors evaluate a statistically determined random sample of finished goods, based on an internationally recognized statistical random sampling techniques known as ANSI/ASQ Z1.4-2003, ISO 2859-1 or based our your AQL needs. This final inspection not only allows us to guarantee a final seal of quality but, it guarantees the accuracy of all your needed documentation</p>
-  </div>
-<!--4_3-->
-<div id="sub-sub-container-4_3">
-	<h3 class="sub-sub-title" data-translate="Production Monitoring">
-		Production Monitoring
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="For highly sensitive orders we offer the service of production monitoring for non-stop on-sight manufacturing control. This level of service can be applied to the production of the product, the packing, the parts, raw material quality, as well as the machinery and the facilities involved">For highly sensitive orders we offer the service of production monitoring for non-stop on-sight manufacturing control. This level of service can be applied to the production of the product, the packing, the parts, raw material quality, as well as the machinery and the facilities involved</p>
-</div>
-	  <!--4_4-->
-<div id="sub-sub-container-4_4">
-	<h3 class="sub-sub-title" data-translate="Defect Sorting">
-		Defect Sorting
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="The target of defect sorting is to sort out and remove products whose quality has not reached the level of acceptability for your procurement. This is used either for orders who have failed repeated inspections or for left-over stock procurements where the quality range significantly exceeds the set of AQL requirements">The target of defect sorting is to sort out and remove products whose quality has not reached the level of acceptability for your procurement. This is used either for orders who have failed repeated inspections or for left-over stock procurements where the quality range significantly exceeds the set of AQL requirements</p>
-	  </div>
-	   <!--4_5-->
-<div id="sub-sub-container-4_5">
-	<h3 class="sub-sub-title" data-translate="Laboratory Testing & Certification">Laboratory Testing & Certification
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="In certain situations your procurement and products may require formal certification, from a state authority or an independently recognized tester, to fulfill legal guidelines. If needed, we can help you work with a wide range of testing and certification organizations in China, including local and international testing centers, laboratories, and science institutions, e.g. TÜV, SGS, Bureau Veritas, CIQ etc., to provide all the necessary documentation and quality guarantees">In certain situations your procurement and products may require formal certification, from a state authority or an independently recognized tester, to fulfill legal guidelines. If needed, we can help you work with a wide range of testing and certification organizations in China, including local and international testing centers, laboratories, and science institutions, e.g. TÜV, SGS, Bureau Veritas, CIQ etc., to provide all the necessary documentation and quality guarantees</p>
-	  </div>
-	   <!--4_6-->
-<div id="sub-sub-container-4_6">
-	<h3 class="sub-sub-title" data-translate="Container Loading Supervision">
-		Container Loading Supervision
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="Container loading supervision is done both before and during loading to ensure loading consistency, safety of the goods during the transportation, and documentation accuracy">Container loading supervision is done both before and during loading to ensure loading consistency, safety of the goods during the transportation, and documentation accuracy</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="Before loading we check shipping marks, packing quality, container conditions, and in some cases, gross weight. Once loading has commenced we concentrate on the quantity of cartons placed, the handling of the goods, and placement inside the container, all to avoid any mistakes or damage of the product and to make sure your products can be securely delivered">Container loading supervision is done both before and during loading to ensure loading consistency, safety of the goods during the transportation, and documentation accuracy</p>
-	  </div>
-<!--------------------->
+          <div id="sub-container-4">
+            <h3 class="sub-title" data-translate="Quality Assurance">
+              Quality Assurance
+            </h3>
+            <p
+              class="sub-description"
+              data-translate="One of the key factors to our success and our ability to make you successful is our keen attention to the quality of your supplied goods. From our experience, when and if quality issues arise, they occur due to three main reasons"
+            >
+              One of the key factors to our success and our ability to make you
+              successful is our keen attention to the quality of your supplied
+              goods. From our experience, when and if quality issues arise, they
+              occur due to three main reasons
+            </p>
+            <p
+              class="sub-description-2"
+              data-translate="Firstly, 50% of the time there is a total lack of understanding of the quality requirements between the supplier and client. Secondly, 35% of the time suppliers disregard requirements all together. Lastly, 10% of the time there are intentional cost and quality reductions"
+            >
+              Firstly, 50% of the time there is a total lack of understanding of
+              the quality requirements between the supplier and client.
+              Secondly, 35% of the time suppliers disregard requirements all
+              together. Lastly, 10% of the time there are intentional cost and
+              quality reductions.
+            </p>
+            <p
+              class="sub-description-3"
+              data-translate="In order to avoid and eliminate the above issues we have adopted and utilize many different processes and tools to guarantee you receive the products you require"
+            >
+              In order to avoid and eliminate the above issues we have adopted
+              and utilize many different processes and tools to guarantee you
+              receive the products you require
+            </p>
+          </div>
+          <!--Для підпосилань Quality Assurance-------------___________________________-->
+          <!--4_1-->
+          <div id="sub-sub-container-4_1">
+            <h3
+              class="sub-sub-title"
+              data-translate="Quality Criteria Coordination"
+            >
+              Quality Criteria Coordination
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="As mentioned, when quality issues occur, 50% of the time this is due to a complete and total misunderstanding of the quality requirements between the supplier and the customer. This can be avoided by identifying and documenting all the aspects of quality long before an order is made. By validating manufacturers capabilities to reach your quality requirements while documenting the requirements you have, we can eliminate and minimize any potential for miscommunication"
+            >
+              As mentioned, when quality issues occur, 50% of the time this is
+              due to a complete and total misunderstanding of the quality
+              requirements between the supplier and the customer. This can be
+              avoided by identifying and documenting all the aspects of quality
+              long before an order is made. By validating manufacturers
+              capabilities to reach your quality requirements while documenting
+              the requirements you have, we can eliminate and minimize any
+              potential for miscommunication
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="We help you understand the possible quality / price levels and help you set the quality criteria and defect definitions, based on either custom-made quality criteria or on AQL (Acceptable Quality Level, as per standard MIL-STD-105E/ISO 2859-1 (1999) or Acceptable Quality Limits as per standard ANSI/ASQ Z1.4-2003)"
+            >
+              We help you understand the possible quality / price levels and
+              help you set the quality criteria and defect definitions, based on
+              either custom-made quality criteria or on AQL (Acceptable Quality
+              Level, as per standard MIL-STD-105E/ISO 2859-1 (1999) or
+              Acceptable Quality Limits as per standard ANSI/ASQ Z1.4-2003)
+            </p>
+          </div>
+          <!--4_2-->
+          <div id="sub-sub-container-4_2">
+            <h3
+              class="sub-sub-title"
+              data-translate="Multi-Stage Quality Inspection"
+            >
+              Multi-Stage Quality Inspection
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Depending on the product, order features, manufacturers situation, and other factors, we are capable of doing single stage, several stage, or even full cycle quality control in order to secure the quality and delivery time of your procurement. We verify workmanship, function, technical features, color, size, labels, marks, and any other parameters you require - all with a view to ensure that the contract specifications for product and packing are met"
+            >
+              Depending on the product, order features, manufacturers situation,
+              and other factors, we are capable of doing single stage, several
+              stage, or even full cycle quality control in order to secure the
+              quality and delivery time of your procurement. We verify
+              workmanship, function, technical features, color, size, labels,
+              marks, and any other parameters you require - all with a view to
+              ensure that the contract specifications for product and packing
+              are met
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Broken into 4 steps, below are the services that enable us to provide you with the quality goods you require"
+            >
+              Broken into 4 steps, below are the services that enable us to
+              provide you with the quality goods you require
+            </p>
+            <h4
+              class="caption-1"
+              data-translate="Pre-Production Inspection (PPI)"
+            >
+              Pre-Production Inspection (PPI)
+            </h4>
+            <p
+              class="sub-sub-description-3"
+              data-translate="Pre-Production Inspection (PPI) is done before the production process even starts. This ensures, not only that the manufacturer understands all quality requirements but, the availability of corresponding raw materials, components, and facilities. This gives us an understanding of the manufacturing schedule and enables us to be aware of any possible quality and lead time deviations"
+            >
+              Pre-Production Inspection (PPI) is done before the production
+              process even starts. This ensures, not only that the manufacturer
+              understands all quality requirements but, the availability of
+              corresponding raw materials, components, and facilities. This
+              gives us an understanding of the manufacturing schedule and
+              enables us to be aware of any possible quality and lead time
+              deviations
+            </p>
+            <h4
+              class="caption-2"
+              data-translate="Initial Production Inspection (IPI)"
+            >
+              Initial Production Inspection (IPI)
+            </h4>
+            <p
+              class="sub-sub-description-4"
+              data-translate="Initial Production Inspection has similar features and functions as the PPI but, extends to the exact order, the evaluation of the actual merchandise, and the actual manufacturing capacity. If necessary, certain order processing adjustments can be made"
+            >
+              Initial Production Inspection has similar features and functions
+              as the PPI but, extends to the exact order, the evaluation of the
+              actual merchandise, and the actual manufacturing capacity. If
+              necessary, certain order processing adjustments can be made
+            </p>
+            <h4
+              class="caption-3"
+              data-translate="During Production Inspection (DPI)"
+            >
+              During Production Inspection (DPI)
+            </h4>
+            <p
+              class="sub-sub-description-5"
+              data-translate="During Product Inspection s implemented when at least 15% of the total merchandise has been manufactured. During this time, we can confirm that all product parameters as well packing marking details conform to your agreed upon specifications"
+            >
+              During Product Inspection s implemented when at least 15% of the
+              total merchandise has been manufactured. During this time, we can
+              confirm that all product parameters as well packing marking
+              details conform to your agreed upon specifications
+            </p>
+            <h4
+              class="caption-4"
+              data-translate="Pre-Shipment Inspection (PSI)"
+            >
+              Pre-Shipment Inspection (PSI)
+            </h4>
+            <p
+              class="sub-sub-description-6"
+              data-translate="A Pre-Shipment Inspection is done when at least 85% of the the merchandise has been completed, packed, and is nearly ready for shipment. Our inspectors evaluate a statistically determined random sample of finished goods, based on an internationally recognized statistical random sampling techniques known as ANSI/ASQ Z1.4-2003, ISO 2859-1 or based our your AQL needs. This final inspection not only allows us to guarantee a final seal of quality but, it guarantees the accuracy of all your needed documentation"
+            >
+              A Pre-Shipment Inspection is done when at least 85% of the the
+              merchandise has been completed, packed, and is nearly ready for
+              shipment. Our inspectors evaluate a statistically determined
+              random sample of finished goods, based on an internationally
+              recognized statistical random sampling techniques known as
+              ANSI/ASQ Z1.4-2003, ISO 2859-1 or based our your AQL needs. This
+              final inspection not only allows us to guarantee a final seal of
+              quality but, it guarantees the accuracy of all your needed
+              documentation
+            </p>
+          </div>
+          <!--4_3-->
+          <div id="sub-sub-container-4_3">
+            <h3 class="sub-sub-title" data-translate="Production Monitoring">
+              Production Monitoring
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="For highly sensitive orders we offer the service of production monitoring for non-stop on-sight manufacturing control. This level of service can be applied to the production of the product, the packing, the parts, raw material quality, as well as the machinery and the facilities involved"
+            >
+              For highly sensitive orders we offer the service of production
+              monitoring for non-stop on-sight manufacturing control. This level
+              of service can be applied to the production of the product, the
+              packing, the parts, raw material quality, as well as the machinery
+              and the facilities involved
+            </p>
+          </div>
+          <!--4_4-->
+          <div id="sub-sub-container-4_4">
+            <h3 class="sub-sub-title" data-translate="Defect Sorting">
+              Defect Sorting
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="The target of defect sorting is to sort out and remove products whose quality has not reached the level of acceptability for your procurement. This is used either for orders who have failed repeated inspections or for left-over stock procurements where the quality range significantly exceeds the set of AQL requirements"
+            >
+              The target of defect sorting is to sort out and remove products
+              whose quality has not reached the level of acceptability for your
+              procurement. This is used either for orders who have failed
+              repeated inspections or for left-over stock procurements where the
+              quality range significantly exceeds the set of AQL requirements
+            </p>
+          </div>
+          <!--4_5-->
+          <div id="sub-sub-container-4_5">
+            <h3
+              class="sub-sub-title"
+              data-translate="Laboratory Testing & Certification"
+            >
+              Laboratory Testing & Certification
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="In certain situations your procurement and products may require formal certification, from a state authority or an independently recognized tester, to fulfill legal guidelines. If needed, we can help you work with a wide range of testing and certification organizations in China, including local and international testing centers, laboratories, and science institutions, e.g. TÜV, SGS, Bureau Veritas, CIQ etc., to provide all the necessary documentation and quality guarantees"
+            >
+              In certain situations your procurement and products may require
+              formal certification, from a state authority or an independently
+              recognized tester, to fulfill legal guidelines. If needed, we can
+              help you work with a wide range of testing and certification
+              organizations in China, including local and international testing
+              centers, laboratories, and science institutions, e.g. TÜV, SGS,
+              Bureau Veritas, CIQ etc., to provide all the necessary
+              documentation and quality guarantees
+            </p>
+          </div>
+          <!--4_6-->
+          <div id="sub-sub-container-4_6">
+            <h3
+              class="sub-sub-title"
+              data-translate="Container Loading Supervision"
+            >
+              Container Loading Supervision
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="Container loading supervision is done both before and during loading to ensure loading consistency, safety of the goods during the transportation, and documentation accuracy"
+            >
+              Container loading supervision is done both before and during
+              loading to ensure loading consistency, safety of the goods during
+              the transportation, and documentation accuracy
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="Before loading we check shipping marks, packing quality, container conditions, and in some cases, gross weight. Once loading has commenced we concentrate on the quantity of cartons placed, the handling of the goods, and placement inside the container, all to avoid any mistakes or damage of the product and to make sure your products can be securely delivered"
+            >
+              Container loading supervision is done both before and during
+              loading to ensure loading consistency, safety of the goods during
+              the transportation, and documentation accuracy
+            </p>
+          </div>
+          <!--------------------->
 
-                    <!--Logistics -->
-                    <div class="sub-content">
-                      <img
-                          class="arrow-gray"
-                          src="images/arrow-gray.png"
-                          alt="arrow-gray"/>
-								<a class="sub-tab" id="logistics" href="#logistics"   data-translate="Logistics"
-                        >Logistics</a>
+          <!--Logistics -->
+          <div class="sub-content">
+            <img
+              class="arrow-gray"
+              src="images/arrow-gray.png"
+              alt="arrow-gray"
+            />
+            <a
+              class="sub-tab"
+              id="logistics"
+              href="#logistics"
+              data-translate="Logistics"
+              >Logistics</a
+            >
 
-                      <div class="dropdown-container">
-								<a class="sub-sub-tab" id="transportation" href="#transportation" data-translate="International Transportation">- International Transportation</a>
-								<a class="sub-sub-tab" id="complex" href="#complex" data-translate="Complex Delivery Planning">- Complex Delivery Planning</a>
-								<a class="sub-sub-tab" id="warehouse" href="#warehouse" data-translate="China Warehouse Management">- China Warehouse Management</a>
-								<a class="sub-sub-tab" id="door" href="#door" data-translate="Door-to-Door Delivery">- Door-to-Door Delivery</a>
-                      </div>
-							 </div>
+            <div class="dropdown-container">
+              <a
+                class="sub-sub-tab"
+                id="transportation"
+                href="#transportation"
+                data-translate="International Transportation"
+                >- International Transportation</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="complex"
+                href="#complex"
+                data-translate="Complex Delivery Planning"
+                >- Complex Delivery Planning</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="warehouse"
+                href="#warehouse"
+                data-translate="China Warehouse Management"
+                >- China Warehouse Management</a
+              >
+              <a
+                class="sub-sub-tab"
+                id="door"
+                href="#door"
+                data-translate="Door-to-Door Delivery"
+                >- Door-to-Door Delivery</a
+              >
+            </div>
+          </div>
 
-                      <div id="sub-container-5">
-                        <h3 class="sub-title" data-translate="Logistics">Logistics
-                        </h3>
-                        <p
-                          class="sub-description"
-                          data-translate="Being such an important element of overall cost and the foundation of supply chain stability, logistics optimization is treated very carefully inside our company. We can offer many solutions and unique fixes for your particular situation which, will result in cost reductions and a more efficient supply chain">Being such an important element of overall cost and
-                          the foundation of supply chain stability, logistics
-                          optimization is treated very carefully inside our
-                          company. We can offer many solutions and unique fixes
-                          for your particular situation which, will result in
-                          cost reductions and a more efficient supply chain.
-                        </p>
-                      </div>
+          <div id="sub-container-5">
+            <h3 class="sub-title" data-translate="Logistics">Logistics</h3>
+            <p
+              class="sub-description"
+              data-translate="Being such an important element of overall cost and the foundation of supply chain stability, logistics optimization is treated very carefully inside our company. We can offer many solutions and unique fixes for your particular situation which, will result in cost reductions and a more efficient supply chain"
+            >
+              Being such an important element of overall cost and the foundation
+              of supply chain stability, logistics optimization is treated very
+              carefully inside our company. We can offer many solutions and
+              unique fixes for your particular situation which, will result in
+              cost reductions and a more efficient supply chain.
+            </p>
+          </div>
 
-<!--Для підпосилань Logistics-------------___________________________-->
-	  <!--5_1-->
-	  <div id="sub-sub-container-5_1">
-		<h3 class="sub-sub-title" data-translate="International Transportation">International Transportation
-		</h3>
-		<p
-		  class="sub-sub-description"
-		  data-translate="When planning the transportation of an order we think about cost, time, production schedule, manufacturer location, port of destination, contract terms, and special transportation requirements, in order to match your goods with the ideal method of delivery">When planning the transportation of an order we think about cost, time, production schedule, manufacturer location, port of destination, contract terms, and special transportation requirements, in order to match your goods with the ideal method of delivery</p>
-		  <p
-		  class="sub-sub-description-2"
-		  data-translate="We cooperate with Chinese local and international shipping agents and shipping lines in order to have a wide array of options available to you when you need them. By sea, air, or land, we can coordinate any combination depending on the product, order urgency, and your location">We cooperate with Chinese local and international shipping agents and shipping lines in order to have a wide array of options available to you when you need them. By sea, air, or land, we can coordinate any combination depending on the product, order urgency, and your location</p>
-	  </div>
- <!--5_2-->
- <div id="sub-sub-container-5_2">
-	<h3 class="sub-sub-title" data-translate="Complex Delivery Planning">Complex Delivery Planning
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="To reduce your cost of delivery and to optimize your inventory holdings, we can work with you on a delivery plan that best fits your needs. Whether your deliveries are dependent on sale forecasts or you use the LCL way of procurement with multiple suppliers, we can assist you">To reduce your cost of delivery and to optimize your inventory holdings, we can work with you on a delivery plan that best fits your needs. Whether your deliveries are dependent on sale forecasts or you use the LCL way of procurement with multiple suppliers, we can assist you</p>
-	  </div>
-<!--5_3-->
-<div id="sub-sub-container-5_3">
-	<h3 class="sub-sub-title" data-translate="China Warehouse Management">China Warehouse Management</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="As an extension of our complex delivery service, we offer warehouse and distribution center management solutions. This option not only allows for the adjustment of SKU quantities in a container but to load a container with an almost unlimited variety of products for further delivery to the exact distribution center of your designation">As an extension of our complex delivery service, we offer warehouse and distribution center management solutions. This option not only allows for the adjustment of SKU quantities in a container but to load a container with an almost unlimited variety of products for further delivery to the exact distribution center of your designation</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="This solution is extremely valuable if your sales territories are large and you have a multi-level distribution system. With our help, we can reduce your logistic costs by avoiding a least one level of your distribution chain">This solution is extremely valuable if your sales territories are large and you have a multi-level distribution system. With our help, we can reduce your logistic costs by avoiding a least one level of your distribution chain</p>
-</div>
-	  <!--5_4-->
-<div id="sub-sub-container-5_4">
-	<h3 class="sub-sub-title" data-translate="Door-to-Door Delivery">
-Door-to-Door Delivery
-	</h3>
-	<p
-	  class="sub-sub-description"
-	  data-translate="In some markets we can offer the service of Door-to-Door delivery, where we take responsibility for all transportation and customs formalities until the goods are delivered to your distribution center">In some markets we can offer the service of Door-to-Door delivery, where we take responsibility for all transportation and customs formalities until the goods are delivered to your distribution center</p>
-	  <p
-	  class="sub-sub-description-2"
-	  data-translate="In this case, you have no need to be directly involved with import contracts, procedures, and other customs formalities. You can concentrate on your main priorities without losing the advantages of importing products from China">In this case, you have no need to be directly involved with import contracts, procedures, and other customs formalities. You can concentrate on your main priorities without losing the advantages of importing products from China</p>
-	  </div>
-     </div>
-                  
+          <!--Для підпосилань Logistics-------------___________________________-->
+          <!--5_1-->
+          <div id="sub-sub-container-5_1">
+            <h3
+              class="sub-sub-title"
+              data-translate="International Transportation"
+            >
+              International Transportation
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="When planning the transportation of an order we think about cost, time, production schedule, manufacturer location, port of destination, contract terms, and special transportation requirements, in order to match your goods with the ideal method of delivery"
+            >
+              When planning the transportation of an order we think about cost,
+              time, production schedule, manufacturer location, port of
+              destination, contract terms, and special transportation
+              requirements, in order to match your goods with the ideal method
+              of delivery
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="We cooperate with Chinese local and international shipping agents and shipping lines in order to have a wide array of options available to you when you need them. By sea, air, or land, we can coordinate any combination depending on the product, order urgency, and your location"
+            >
+              We cooperate with Chinese local and international shipping agents
+              and shipping lines in order to have a wide array of options
+              available to you when you need them. By sea, air, or land, we can
+              coordinate any combination depending on the product, order
+              urgency, and your location
+            </p>
+          </div>
+          <!--5_2-->
+          <div id="sub-sub-container-5_2">
+            <h3
+              class="sub-sub-title"
+              data-translate="Complex Delivery Planning"
+            >
+              Complex Delivery Planning
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="To reduce your cost of delivery and to optimize your inventory holdings, we can work with you on a delivery plan that best fits your needs. Whether your deliveries are dependent on sale forecasts or you use the LCL way of procurement with multiple suppliers, we can assist you"
+            >
+              To reduce your cost of delivery and to optimize your inventory
+              holdings, we can work with you on a delivery plan that best fits
+              your needs. Whether your deliveries are dependent on sale
+              forecasts or you use the LCL way of procurement with multiple
+              suppliers, we can assist you
+            </p>
+          </div>
+          <!--5_3-->
+          <div id="sub-sub-container-5_3">
+            <h3
+              class="sub-sub-title"
+              data-translate="China Warehouse Management"
+            >
+              China Warehouse Management
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="As an extension of our complex delivery service, we offer warehouse and distribution center management solutions. This option not only allows for the adjustment of SKU quantities in a container but to load a container with an almost unlimited variety of products for further delivery to the exact distribution center of your designation"
+            >
+              As an extension of our complex delivery service, we offer
+              warehouse and distribution center management solutions. This
+              option not only allows for the adjustment of SKU quantities in a
+              container but to load a container with an almost unlimited variety
+              of products for further delivery to the exact distribution center
+              of your designation
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="This solution is extremely valuable if your sales territories are large and you have a multi-level distribution system. With our help, we can reduce your logistic costs by avoiding a least one level of your distribution chain"
+            >
+              This solution is extremely valuable if your sales territories are
+              large and you have a multi-level distribution system. With our
+              help, we can reduce your logistic costs by avoiding a least one
+              level of your distribution chain
+            </p>
+          </div>
+          <!--5_4-->
+          <div id="sub-sub-container-5_4">
+            <h3 class="sub-sub-title" data-translate="Door-to-Door Delivery">
+              Door-to-Door Delivery
+            </h3>
+            <p
+              class="sub-sub-description"
+              data-translate="In some markets we can offer the service of Door-to-Door delivery, where we take responsibility for all transportation and customs formalities until the goods are delivered to your distribution center"
+            >
+              In some markets we can offer the service of Door-to-Door delivery,
+              where we take responsibility for all transportation and customs
+              formalities until the goods are delivered to your distribution
+              center
+            </p>
+            <p
+              class="sub-sub-description-2"
+              data-translate="In this case, you have no need to be directly involved with import contracts, procedures, and other customs formalities. You can concentrate on your main priorities without losing the advantages of importing products from China"
+            >
+              In this case, you have no need to be directly involved with import
+              contracts, procedures, and other customs formalities. You can
+              concentrate on your main priorities without losing the advantages
+              of importing products from China
+            </p>
+          </div>
+        </div>
+
         <!--ВКЛАДКА CONTACTS-------------------------------------------------------------------------------------------------------->
         <div id="contacts-content">
           <h1 class="title-about" data-translate="Contacts">Contacts</h1>
           <p
             class="text-contacts-green"
-            data-translate="Thank you for your interest in Niche Supply Control Co., Ltd">
+            data-translate="Thank you for your interest in Niche Supply Control Co., Ltd"
+          >
             Thank you for your interest in Niche Supply Control Co., Ltd
           </p>
           <p
             class="text-contacts-green"
-            data-translate="If you have further questions or would like to speak to us about our services, please feel free to use any of the methods of contact below">If you have further questions or would like to speak to us about our
-            services, please feel free to use any of the methods of contact below
+            data-translate="If you have further questions or would like to speak to us about our services, please feel free to use any of the methods of contact below"
+          >
+            If you have further questions or would like to speak to us about our
+            services, please feel free to use any of the methods of contact
+            below
           </p>
           <p
             class="text-contacts-green"
-            data-translate="We look forward to hearing from you">We look forward to hearing from you
+            data-translate="We look forward to hearing from you"
+          >
+            We look forward to hearing from you
           </p>
 
           <h2 class="title-paragraph-green" data-translate="Mail:">Mail:</h2>
@@ -784,18 +1429,18 @@ Door-to-Door Delivery
             Niche SC Ltd
             <br />
             Room 707, Time Fortune Building 8 (North Tower),
-            <br/>
+            <br />
             Chaoyang District, Beijing, P.R. China.
-            <br/>
+            <br />
             Postal Code: 100028
-            <br/>
-            <br/>
+            <br />
+            <br />
             北京朝阳区三元西桥
-            <br/>
+            <br />
             曙光西里甲6号
-            <br/>
+            <br />
             时间国际8号楼北楼707室
-            <br/>
+            <br />
             邮编 100028
           </p>
 
@@ -803,7 +1448,7 @@ Door-to-Door Delivery
             Phone & Fax:
           </h2>
           <p data-translate="Phone: +86 (10) 6501-0188">
-            Phone: +86 (10) 6501-0188 <br/>
+            Phone: +86 (10) 6501-0188 <br />
           </p>
 
           <p data-translate="Fax: +86 (10) 6501-7188">
@@ -812,7 +1457,7 @@ Door-to-Door Delivery
 
           <h2 class="title-paragraph-green" data-translate="Email:">Email:</h2>
           <p data-translate="E-mail for general inquiries: info@nichesc.com">
-            E-mail for general inquiries: info@nichesc.com <br/>
+            E-mail for general inquiries: info@nichesc.com <br />
           </p>
 
           <p
@@ -822,10 +1467,10 @@ Door-to-Door Delivery
           </p>
         </div>
       </main>
-<!--FOOTER-------------------------------------------------------------------------------------------------------->
+      <!--FOOTER-------------------------------------------------------------------------------------------------------->
       <footer>
         <div class="footer-left" id="footer-logo">
-          <img src="images/niche_small.png" alt="Niche logo">
+          <img src="images/niche_small.png" alt="Niche logo" />
         </div>
 
         <div class="footer-right">
