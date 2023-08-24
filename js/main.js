@@ -956,6 +956,7 @@ document.getElementById("inspection").addEventListener("click", function () {
   document.getElementById("sub-sub-container-4_5").style.display = "none";
   document.getElementById("sub-sub-container-4_6").style.display = "none";
   document.getElementById("sub-sub-container-4_2").style.display = "block";
+  document.getElementById("sub-sub-container-4_2").style.overflow = "auto";
   document.getElementById("sub-sub-container-1_1").style.display = "none";
   document.getElementById("sub-sub-container-1_2").style.display = "none";
   document.getElementById("sub-sub-container-1_3").style.display = "none";
@@ -2727,3 +2728,29 @@ document
   .getElementById("footer-contacts")
   .addEventListener("click", goToContactsFooter);
 //  goToHome(); // перехід на домашню сторінку
+
+
+///////////////////////////////////////////////////////////////
+//MAIN FOOTER
+const mainContent = document.querySelector('main');
+const footer = document.querySelector('footer');
+
+
+const adjustFooterPosition = () => {
+  const mainContentHeight = mainContent.clientHeight;
+  const windowHeight = window.innerHeight;
+  
+  if (mainContentHeight < windowHeight) {
+	 footer.style.position = 'fixed';
+	 footer.style.bottom = '0';
+  } else {
+	 footer.style.position = 'relative';
+  }
+};
+
+
+window.addEventListener('load', adjustFooterPosition);
+window.addEventListener('resize', adjustFooterPosition);
+
+
+
