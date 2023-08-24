@@ -1981,7 +1981,7 @@ div.footer-bottom p {
 	}
 }
 
-/***************************************************від 376px до 414px:***********************************************/
+/***************************************************від 390px до 414px:***********************************************/
 @media screen and (min-device-width: 376px) and (max-device-width: 414px) {
 	body {
 		width: 100%;
@@ -2321,8 +2321,349 @@ div.footer-bottom p {
 		margin-left: 80px;
 	}
 }
-/****************************************************від 281px до 375px:***********************************************/
-@media screen and (min-device-width: 281px) and (max-device-width: 375px) {
+
+/***************************************************від 375px до 389px:***********************************************/
+@media screen and (min-device-width: 375px) and (max-device-width: 389px) {
+	body {
+		width: 100%;
+		height: 100%;
+		max-width: 414px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+
+		display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+	}
+
+	* {
+		outline: none;
+	}
+	main {
+		flex-grow: 1;
+
+		padding: 20px;
+      padding-bottom: 100px; 
+	}
+
+	.language-switcher {
+		min-width: 600px;
+		margin-top: 50px;
+		margin-left: 450px;
+	}
+	.language-link {
+		font-size: 28px;
+		margin-left: 15px;
+	}
+	#language-link_en.active,
+	#language-link_uk.active,
+	#language-link_es.active,
+	#language-link_zh.active {
+		border-radius: 30%;
+		color: #e40f0f;
+	}
+
+	.logo {
+		margin-top: -10px;
+		margin-left: 40px;
+	}
+	.logo img {
+		width: 350px;
+	}
+
+	.burger-icon {
+		display: block;
+		margin-left: 90px;
+		margin-top: 20px;
+	}
+
+	.burger-icon span {
+		display: block;
+		width: 90px;
+		height: 7px;
+		margin-bottom: 10px;
+		background-color: #2071205b;
+		transition: transform 0.3s ease-out;
+	}
+
+	.burger-icon span:nth-child(2) {
+		width: 100%;
+	}
+
+	#burger-checkbox:checked ~ .burger-icon span:nth-child(1) {
+		transform: rotate(45deg) translate(2px, 6px);
+	}
+
+	#burger-checkbox:checked ~ .burger-icon span:nth-child(2) {
+		opacity: 0;
+	}
+
+	#burger-checkbox:checked ~ .burger-icon span:nth-child(3) {
+		transform: rotate(-45deg) translate(2px, -6px);
+	}
+
+	.down-menu {
+		display: none;
+	}
+	.main-menu ul {
+		display: none;
+		position: absolute;
+		top: 12%;
+		left: 10%;
+		width: 750px;
+		border-radius: 20px;
+		background-color: rgb(242, 246, 240);
+		z-index: 3;
+	}
+
+	.down-menu {
+		pointer-events: none;
+	}
+
+	.main-menu li {
+		padding: 50px;
+		text-align: center;
+		color: #696363;
+	}
+
+	.main-menu li a {
+		font-size: 32px;
+		font-weight: 900;
+	}
+	#burger-checkbox:checked ~ .main-menu ul:not(.down-menu) {
+		display: block;
+		border-radius: 20px;
+		/* z-index: 3; 	 */
+		background-color: rgb(242, 246, 240);
+	}
+
+	#burger-checkbox:checked ~ .main-menu ul .down-menu li {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	#burger-checkbox:checked ~ .main-menu ul {
+		display: block;
+	}
+
+	#burger-checkbox:checked ~ .main-menu ul .down-menu {
+		display: block;
+	}
+
+	#slider {
+		top: 50px;
+		left: -90px;
+	}
+	#slides article {
+		width: 24%;
+	}
+
+	#slides .image {
+		width: 400%;
+	}
+	#active_sl {
+		margin-top: 200px;
+		margin-left: 10px;
+	}
+	.slider-arrow.left {
+		top: 75px;
+		left: -10px;
+	}
+	.slider-arrow.right {
+		top: 75px;
+		right: -30px;
+	}
+	.text-home {
+		margin-top: 70px;
+		margin-left: 80px;
+	}
+
+	.text-home p {
+		width: 710px;
+		font-size: 18px;
+	}
+
+	#read-more {
+		margin-top: -15px;
+		margin-left: -60px;
+		font-size: 18px;
+	}
+
+	.title-about,
+	.title-paragraph,
+	p {
+		margin-left: -60px;
+	}
+
+	.title-about {
+		margin-top: 30px;
+		font-size: 32px;
+	}
+	.title-paragraph {
+		font-size: 14px;
+	}
+
+	p {
+		width: 750px;
+		margin-top: 30px;
+		font-size: 14px;
+	}
+
+	#text-solutions p {
+		font-size: 13px;
+	}
+
+	.sub-content {
+		margin-left: -120px;
+		width: 500px;
+	}
+	.sub-content a {
+		font-size: 30px;
+		width: 400px;
+	}
+
+	.dropdown-container a {
+		margin-left: -10px;
+		font-size: 26px;
+		width: 320px;
+	}
+
+	.sub-title {
+		top: 17%;
+		left: 47%;
+		font-size: 28px;
+		width: 350px;
+	}
+	.sub-description,
+	.sub-description-2,
+	.sub-description-3 {
+		left: 53%;
+		width: 500px;
+		font-size: 22px;
+	}
+	.sub-description {
+		top: 20%;
+	}
+
+	.sub-description-2 {
+		top: 32%;
+	}
+	.sub-description-3 {
+		top: 46%;
+	}
+
+	.sub-sub-title {
+		top: 18%;
+		left: 44%;
+		font-size: 26px;
+		width: 600px;
+	}
+	.sub-sub-description,
+	.sub-sub-description-2,
+	.sub-sub-description-3,
+	.sub-sub-description__q1,
+	.sub-sub-description__q2,
+	.sub-sub-description__q3,
+	.sub-sub-description__q4,
+	.sub-sub-description__q5,
+	.sub-sub-description__q6 {
+		position: absolute;
+		left: 50%;
+		width: 500px;
+		font-size: 20px;
+		line-height: 1.5;
+		color: rgb(99, 98, 98);
+	}
+	
+	.sub-sub-description {
+		top: 20%;
+	}
+	.sub-sub-description-2 {
+		top: 37%;
+	}
+	.sub-sub-description-3 {
+		top: 46%;
+	}
+	
+	.caption-1,
+	.caption-2,
+	.caption-3,
+	.caption-4 {
+		position: absolute;
+		left: 44%;
+		width: 550px;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.5;
+		color: rgb(251, 89, 53);
+	}
+	.caption-1 {
+		top: 42%;
+	}
+	.caption-2 {
+		top: 59%;
+	}
+	.caption-3 {
+		top: 71%;
+	}
+	.caption-4 {
+		top: 82%;
+	}
+	
+	.sub-sub-description__q1{
+		top: 20%;
+	}
+	.sub-sub-description__q2{
+		top: 37%;
+	}
+	.sub-sub-description__q3{
+		top: 43%;
+	}
+	.sub-sub-description__q4{
+		top:60%;
+	}
+	.sub-sub-description__q5{
+		top: 72%;
+	}
+	.sub-sub-description__q6{
+		top: 86%;
+	}
+
+	.title-paragraph-green {
+		margin-left: -30px;
+		font-size: 14px;
+	}
+
+	.text-contacts-green {
+		font-size: 12px;
+		width: 750px;
+	}
+
+	footer {
+		height: 90px;
+		background-color: #fbfbfb;
+		text-align: center;
+      padding: 10px;
+	}
+
+	.footer-left img {
+		margin-left: 100px;
+	}
+	.footer-right ul {
+		display: flex;
+		min-width: 300px;
+		margin-left: 70px;
+	}
+	.footer-right ul li {
+		margin-right: 5px;
+	}
+	div.footer-bottom p {
+		margin-left: 80px;
+	}
+}
+/****************************************************від 281px до 374px:***********************************************/
+@media screen and (min-device-width: 281px) and (max-device-width: 374px) {
 	body {
 		width: 100%;
 		height: 100%;
@@ -2408,7 +2749,7 @@ div.footer-bottom p {
 	.main-menu ul {
 		display: none;
 		position: absolute;
-		top: 13%;
+		top: 12%;
 		left: 10%;
 		width: 750px;
 		border-radius: 20px;
@@ -2529,7 +2870,7 @@ div.footer-bottom p {
 	}
 
 	.sub-title {
-		top: 19%;
+		top: 15%;
 		left: 50%;
 		font-size: 30px;
 		width: 400px;
@@ -2542,18 +2883,18 @@ div.footer-bottom p {
 		font-size: 24px;
 	}
 	.sub-description {
-		top: 22%;
+		top: 18%;
 	}
 
 	.sub-description-2 {
-		top: 37%;
+		top: 34%;
 	}
 	.sub-description-3 {
-		top: 53%;
+		top: 49%;
 	}
 
 	.sub-sub-title {
-		top: 19%;
+		top: 15%;
 		left: 44%;
 		font-size: 26px;
 		width: 700px;
@@ -2576,13 +2917,13 @@ div.footer-bottom p {
 	}
 	
 	.sub-sub-description {
-		top: 21%;
+		top: 17%;
 	}
 	.sub-sub-description-2 {
-		top: 50%;
+		top: 42%;
 	}
 	.sub-sub-description-3 {
-		top: 78%;
+		top: 48%;
 	}
 	
 	.caption-1,
