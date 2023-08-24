@@ -1230,35 +1230,35 @@ div.footer-bottom p {
 		color: rgb(251, 89, 53);
 	}
 	.caption-1 {
-		top: 39%;
+		top: 41%;
 	}
 	.caption-2 {
-		top: 52%;
+		top: 54%;
 	}
 	.caption-3 {
-		top: 62%;
+		top: 64%;
 	}
 	.caption-4 {
-		top: 72%;
+		top: 74%;
 	}
 	
 	.sub-sub-description__q1{
-		top: 23%;
+		top: 24%;
 	}
 	.sub-sub-description__q2{
-		top: 36%;
+		top: 38%;
 	}
 	.sub-sub-description__q3{
-		top: 41%;
+		top: 43%;
 	}
 	.sub-sub-description__q4{
-		top: 54%;
+		top: 56%;
 	}
 	.sub-sub-description__q5{
-		top: 64%;
+		top: 66%;
 	}
 	.sub-sub-description__q6{
-		top: 74%;
+		top: 76%;
 	}
 	.title-paragraph-green {
 		margin-left: -20px;
@@ -1550,7 +1550,7 @@ div.footer-bottom p {
 		top: 46%;
 	}
 	.sub-sub-description-3 {
-		top: 51%;
+		top: 55%;
 	}
 	
 	.caption-1,
@@ -1579,10 +1579,10 @@ div.footer-bottom p {
 	}
 	
 	.sub-sub-description__q1{
-		top: 24%;
+		top: 26%;
 	}
 	.sub-sub-description__q2{
-		top: 43%;
+		top: 44%;
 	}
 	.sub-sub-description__q3{
 		top: 51%;
@@ -1747,8 +1747,7 @@ div.footer-bottom p {
 	}
 	#burger-checkbox:checked ~ .main-menu ul:not(.down-menu) {
 		display: block;
-		border-radius: 20px;
-		/* z-index: 3; 	 */
+		border-radius: 20px; 
 		background-color: rgb(242, 246, 240);
 	}
 
@@ -2409,7 +2408,7 @@ div.footer-bottom p {
 	.main-menu ul {
 		display: none;
 		position: absolute;
-		top: 12%;
+		top: 13%;
 		left: 10%;
 		width: 750px;
 		border-radius: 20px;
@@ -2530,7 +2529,7 @@ div.footer-bottom p {
 	}
 
 	.sub-title {
-		top: 17%;
+		top: 19%;
 		left: 50%;
 		font-size: 30px;
 		width: 400px;
@@ -2538,23 +2537,23 @@ div.footer-bottom p {
 	.sub-description,
 	.sub-description-2,
 	.sub-description-3 {
-		left: 56%;
+		left: 55%;
 		width: 480px;
 		font-size: 24px;
 	}
 	.sub-description {
-		top: 20%;
+		top: 22%;
 	}
 
 	.sub-description-2 {
-		top: 34%;
+		top: 37%;
 	}
 	.sub-description-3 {
-		top: 50%;
+		top: 53%;
 	}
 
 	.sub-sub-title {
-		top: 17%;
+		top: 19%;
 		left: 44%;
 		font-size: 26px;
 		width: 700px;
@@ -2577,13 +2576,13 @@ div.footer-bottom p {
 	}
 	
 	.sub-sub-description {
-		top: 19%;
+		top: 21%;
 	}
 	.sub-sub-description-2 {
-		top: 48%;
+		top: 50%;
 	}
 	.sub-sub-description-3 {
-		top: 76%;
+		top: 78%;
 	}
 	
 	.caption-1,
@@ -2599,32 +2598,32 @@ div.footer-bottom p {
 		color: rgb(251, 89, 53);
 	}
 	.caption-1 {
-		top: 57%;
+		top: 58%;
 	}
 	.caption-2 {
-		top: 85%;
+		top: 86%;
 	}
 	.caption-3 {
-		top: 102%;
+		top: 103%;
 	}
 	.caption-4 {
-		top: 121%;
+		top: 122%;
 	}
 	
 	.sub-sub-description__q1{
-		top: 19%;
+		top: 21%;
 	}
 	.sub-sub-description__q2{
-		top: 48%;
+		top: 50%;
 	}
 	.sub-sub-description__q3{
-		top: 59%;
+		top: 60%;
 	}
 	.sub-sub-description__q4{
-		top: 87%;
+		top: 88%;
 	}
 	.sub-sub-description__q5{
-		top: 104%;
+		top: 105%;
 	}
 	.sub-sub-description__q6{
 		top: 124%;
